@@ -1,0 +1,55 @@
+.hero {
+  background-color: var(--color-forest-light);
+  background-image: linear-gradient(rgba(11, 26, 20, 0.7), rgba(11, 26, 20, 0.85)), url('/images/trek1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-inverse);
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--color-amber);
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0;
+  color: var(--color-text-inverse);
+}
+
+.itinerary, .list {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.sidebarCard {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  position: sticky;
+  top: 100px;
+}
+
+.fact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(27, 59, 54, 0.1);
+}
+
+.fact:last-of-type {
+  border-bottom: none;
+}

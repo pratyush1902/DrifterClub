@@ -1,0 +1,661 @@
+.pageContainer {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  padding-bottom: 5rem; /* Space for mobile sticky CTA */
+}
+
+/* ================================================== */
+/* 1. HERO SECTION */
+/* ================================================== */
+.hero {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  padding: 4rem 0 3rem 0;
+  border-bottom: 3px solid var(--color-amber);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(7, 18, 14, 0.45) 0%, rgba(7, 18, 14, 0.92) 100%);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.heroBadge {
+  display: inline-block;
+  background: rgba(255, 69, 0, 0.2);
+  color: var(--color-amber);
+  border: 1px solid var(--color-amber);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: #FFFFFF;
+  margin-bottom: 0.6rem;
+}
+
+.heroHook {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--color-amber);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.metaStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 0.92rem;
+  color: rgba(244, 240, 230, 0.85);
+  margin-bottom: 1.8rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: fit-content;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.primaryCta {
+  background: var(--color-amber);
+  color: #FFFFFF;
+  padding: 1rem 2.2rem;
+  border-radius: 40px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(255, 69, 0, 0.4);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryCta:hover {
+  transform: scale(1.04);
+  background: #FF662A;
+}
+
+.secondaryCta {
+  background: rgba(248, 245, 240, 0.15);
+  color: #FFFFFF;
+  border: 1px solid rgba(248, 245, 240, 0.4);
+  padding: 0.95rem 1.8rem;
+  border-radius: 40px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.secondaryCta:hover {
+  background: rgba(248, 245, 240, 0.3);
+  color: #FFFFFF;
+}
+
+.soloNote {
+  font-size: 0.88rem;
+  color: rgba(244, 240, 230, 0.7);
+  font-style: italic;
+}
+
+/* ================================================== */
+/* 2. EXPERIENCE INTRO */
+/* ================================================== */
+.editorialSection {
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--color-forest);
+  margin-bottom: 1.2rem;
+}
+
+.introCopy {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 780px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.editorialStatement {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  text-transform: uppercase;
+  color: var(--color-amber);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-top: 1.5rem;
+}
+
+/* ================================================== */
+/* 3. WHAT'S INCLUDED */
+/* ================================================== */
+.inclusionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .inclusionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .inclusionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.inclusionCard {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  box-shadow: 0 8px 24px rgba(27, 59, 54, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.inclusionIcon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.inclusionTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--color-forest);
+  margin-bottom: 0.4rem;
+}
+
+.inclusionDesc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.surpriseBox {
+  background: var(--color-forest);
+  color: #F4F0E6;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid var(--color-forest-light);
+}
+
+.surpriseTitle {
+  color: var(--color-amber);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.surpriseText {
+  font-size: 1.05rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ================================================== */
+/* 4. WHAT'S NOT INCLUDED */
+/* ================================================== */
+.exclusionsBox {
+  background: #FFFFFF;
+  border: 1.5px dashed rgba(27, 59, 54, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.exclusionStatement {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-forest);
+  margin-bottom: 1.2rem;
+}
+
+.exclusionList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+@media (min-width: 640px) {
+  .exclusionList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.exclusionItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.exclusionCross {
+  color: #EF4444;
+  font-weight: bold;
+}
+
+/* ================================================== */
+/* 5. THE DRIFTER DIFFERENCE */
+/* ================================================== */
+.differenceSection {
+  background: var(--color-forest);
+  color: #F4F0E6;
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.diffStatements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .diffStatements {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.diffPill {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  letter-spacing: 0.05em;
+  color: var(--color-amber);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 69, 0, 0.3);
+}
+
+/* ================================================== */
+/* 6. TRIP ITINERARY (TIMELINE) */
+/* ================================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.timelineCard {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(27, 59, 54, 0.05);
+  transition: border-color 0.25s ease;
+}
+
+.timelineHeader {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(248, 245, 240, 0.5);
+  user-select: none;
+}
+
+.timelineDayTitle {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-forest);
+}
+
+.timelineToggleIcon {
+  font-size: 1.4rem;
+  color: var(--color-amber);
+  font-weight: bold;
+}
+
+.timelineBody {
+  padding: 1.5rem 1.6rem;
+  border-top: 1px solid rgba(27, 59, 54, 0.08);
+}
+
+.timelineActivity {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--color-text-main);
+  margin-bottom: 1.2rem;
+}
+
+.timelineMeta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ================================================== */
+/* 7. TRIP DETAILS GRID */
+/* ================================================== */
+.specsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .specsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.specCard {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(27, 59, 54, 0.04);
+}
+
+.specLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.specValue {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-forest);
+}
+
+/* ================================================== */
+/* 8. WHO IS THIS FOR? */
+/* ================================================== */
+.forGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .forGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.loveCard {
+  background: rgba(0, 230, 118, 0.06);
+  border: 1.5px solid #00E676;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.notLoveCard {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1.5px solid #EF4444;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.forTitle {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.loveTitle { color: #008844; }
+.notLoveTitle { color: #DC2626; }
+
+.checkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.greenCheck { color: #00E676; font-weight: bold; }
+.redCross { color: #EF4444; font-weight: bold; }
+
+/* ================================================== */
+/* 9. THE COMMUNITY (WHO'S COMING?) */
+/* ================================================== */
+.communityBox {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(27, 59, 54, 0.06);
+}
+
+.avatarStrip {
+  display: flex;
+  justify-content: center;
+  gap: -0.8rem;
+  margin: 1.2rem 0;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================================================== */
+/* 10. FOMO EXPERIENCE SECTION */
+/* ================================================== */
+.fomoSection {
+  background: var(--color-forest);
+  color: #F4F0E6;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.fomoTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.fomoText {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ================================================== */
+/* 11. FAQ ACCORDION */
+/* ================================================== */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqItem {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(27, 59, 54, 0.04);
+}
+
+.faqQuestion {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-forest);
+  user-select: none;
+}
+
+.faqAnswer {
+  padding: 1.2rem 1.5rem;
+  border-top: 1px solid rgba(27, 59, 54, 0.08);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+/* ================================================== */
+/* 12. FINAL CTA */
+/* ================================================== */
+.finalCtaBox {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--color-bg-primary);
+}
+
+/* ================================================== */
+/* 13. TRUST / SAFETY */
+/* ================================================== */
+.trustStrip {
+  border-top: 1.5px solid rgba(27, 59, 54, 0.12);
+  padding: 3rem 0;
+  background: #FFFFFF;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .trustGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.trustItem {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  color: var(--color-forest);
+}
+
+/* ================================================== */
+/* 14. MOBILE STICKY BOTTOM BAR */
+/* ================================================== */
+.mobileStickyBar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobileStickyBar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #07120E;
+    color: #FFFFFF;
+    padding: 0.9rem 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 -8px 24px rgba(0,0,0,0.3);
+    border-top: 1px solid var(--color-amber);
+  }
+
+  .stickyPrice {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
+
+  .stickyBtn {
+    background: var(--color-amber);
+    color: #FFFFFF;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}

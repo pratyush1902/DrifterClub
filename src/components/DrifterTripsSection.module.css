@@ -1,0 +1,373 @@
+.sectionWrapper {
+  background-color: var(--color-bg-primary); /* Light Cream Theme (#F8F5F0) */
+  color: var(--color-text-main);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 2px solid var(--color-forest);
+}
+
+/* SECTION HEADERS */
+.sectionHeader {
+  margin-bottom: 2.5rem;
+}
+
+.headlineLabel {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.mainHeadline {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: var(--color-forest);
+  margin-bottom: 0.6rem;
+}
+
+.subHeadline {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 540px;
+  line-height: 1.4;
+}
+
+/* SECTION 01: LIVE EXPERIENCES (HAPPENING NOW) */
+.liveGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 868px) {
+  .liveGrid {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 640px) {
+  .liveGrid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    margin-right: -1rem;
+    padding-right: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .liveGrid::-webkit-scrollbar { display: none; }
+}
+
+/* CARDS COMMON BASE - LIGHT THEME */
+.tripCard {
+  background-color: #FFFFFF;
+  border: 1.5px solid rgba(27, 59, 54, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 24px rgba(27, 59, 54, 0.06);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+@media (max-width: 640px) {
+  .tripCard {
+    flex: 0 0 82%;
+    scroll-snap-align: start;
+  }
+}
+
+.tripCard:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-amber);
+  box-shadow: 0 16px 36px rgba(27, 59, 54, 0.12), 0 0 20px rgba(255, 69, 0, 0.15);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroCard .cardImageWrapper {
+  height: 320px;
+}
+
+.secondaryCard .cardImageWrapper {
+  height: 230px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tripCard:hover .cardImage {
+  transform: scale(1.03);
+}
+
+/* BADGES */
+.badgeGroup {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.statusBadge {
+  background: var(--color-amber);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+}
+
+.upcomingBadge {
+  background: var(--color-forest);
+  color: #FFFFFF;
+}
+
+/* CARD CONTENT */
+.cardContent {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.heroCard .cardContent {
+  padding: 2.2rem;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  color: var(--color-forest);
+  margin-bottom: 0.8rem;
+}
+
+.primaryHook {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-amber);
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.secondaryCopy {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.mysteriousLine {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--color-forest-light);
+  margin-bottom: 1.2rem;
+}
+
+/* CARD META INFO (FOR LIVE TRIPS ONLY) */
+.cardMeta {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(27, 59, 54, 0.1);
+  margin-bottom: 1.2rem;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.metaLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.metaValue {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+/* CARD CTA BUTTON LINK */
+.ctaLink {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  color: var(--color-amber);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  transition: transform 0.25s ease;
+}
+
+.tripCard:hover .ctaLink {
+  transform: translateX(6px);
+  color: #FF662A;
+}
+
+/* SECTION 02: UPCOMING EXPERIENCES (YOUR NEXT BAD DECISION) */
+.upcomingGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .upcomingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featuredUpcoming {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .featuredUpcoming {
+    grid-column: span 2;
+  }
+}
+
+/* SECTION 03: THE MYSTERY CARD */
+.mysteryCard {
+  background: var(--color-forest);
+  color: #F4F0E6;
+  border: 1.5px dashed var(--color-amber);
+  border-radius: 20px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(11, 26, 20, 0.2);
+}
+
+.mysteryTag {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--color-amber);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.mysteryTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+
+.mysterySub {
+  font-size: 1.1rem;
+  color: rgba(244, 240, 230, 0.8);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.mysteryBtn {
+  background: var(--color-amber);
+  color: #FFFFFF;
+  padding: 0.9rem 2.2rem;
+  border-radius: 40px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  box-shadow: 0 6px 20px rgba(255, 69, 0, 0.35);
+}
+
+.mysteryBtn:hover {
+  transform: scale(1.05);
+  background: #FF662A;
+}
+
+/* SECTION 04: BRAND CTA */
+.brandCtaBox {
+  border-top: 1.5px solid rgba(27, 59, 54, 0.12);
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.brandHeadline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: var(--color-forest);
+  margin-bottom: 1rem;
+}
+
+.brandSub {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
+.brandBtn {
+  background: var(--color-forest);
+  color: #F4F0E6;
+  padding: 1.1rem 2.8rem;
+  border-radius: 40px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.brandBtn:hover {
+  transform: scale(1.05);
+  background: var(--color-amber);
+  color: #FFFFFF;
+}

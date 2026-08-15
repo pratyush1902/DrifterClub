@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(27, 59, 54, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(27, 59, 54, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 240px;
+  background-color: var(--color-forest-light);
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageText {
+  color: rgba(248, 245, 240, 0.5);
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.content {
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  margin-bottom: 0.3rem;
+  color: var(--color-forest);
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.action {
+  margin-top: auto;
+  border-top: 1px solid rgba(27, 59, 54, 0.1);
+  padding-top: var(--spacing-xs);
+}
+
+.viewLink {
+  color: var(--color-forest);
+  font-weight: 600;
+  font-family: var(--font-display);
+  transition: color var(--transition-fast);
+}
+
+.card:hover .viewLink {
+  color: var(--color-amber);
+}

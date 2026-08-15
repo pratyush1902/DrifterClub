@@ -1,0 +1,215 @@
+.explorerContainer {
+  margin-top: var(--spacing-lg);
+}
+
+.categoryTabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 640px) {
+  .categoryTabs {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .categoryTabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabBtn {
+  background: var(--color-bg-secondary);
+  border: 1.5px solid rgba(11, 26, 20, 0.12);
+  color: var(--color-forest);
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(11, 26, 20, 0.04);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .tabBtn {
+    padding: 0.45rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+.tabBtn:hover {
+  background: rgba(255, 69, 0, 0.1);
+  border-color: var(--color-amber);
+  color: var(--color-amber);
+  transform: translateY(-2px);
+}
+
+.activeTabBtn {
+  background: var(--color-forest) !important;
+  border-color: var(--color-forest) !important;
+  color: var(--color-text-inverse) !important;
+  box-shadow: 0 6px 18px rgba(11, 26, 20, 0.2) !important;
+}
+
+.categoryVisionBox {
+  background: var(--color-forest);
+  color: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  border: 1px solid var(--color-forest-light);
+  box-shadow: 0 10px 25px rgba(11, 26, 20, 0.15);
+}
+
+@media (max-width: 640px) {
+  .categoryVisionBox {
+    padding: 1rem 0.8rem;
+  }
+}
+
+.categoryTitle {
+  color: var(--color-amber);
+  margin-bottom: 0.3rem;
+}
+
+.categoryVisionText {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .categoryVisionText {
+    font-size: 0.95rem;
+  }
+}
+
+.tripsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .tripsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tripsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tripCard {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(11, 26, 20, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.tripCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(11, 26, 20, 0.12), 0 0 20px rgba(255, 69, 0, 0.15);
+  border-color: rgba(255, 69, 0, 0.4);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-amber);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.4);
+}
+
+.statusBadgeUpcoming {
+  background-color: var(--color-forest);
+}
+
+.statusBadgeWeekly {
+  background-color: #10B981;
+}
+
+.cardBody {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+  .cardBody {
+    padding: 1.2rem 1rem;
+  }
+}
+
+.tripLocation {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.tripTitle {
+  color: var(--color-forest);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.tripVision {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  margin-top: auto;
+  border-top: 1px solid rgba(11, 26, 20, 0.08);
+  padding-top: 0.8rem;
+}
+
+.actionBtn {
+  color: var(--color-amber);
+  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: transform 0.2s ease;
+}
+
+.tripCard:hover .actionBtn {
+  transform: translateX(5px);
+}
