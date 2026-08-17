@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import DrifterLogo from '@/components/DrifterLogo';
+import VisitorCounter from '@/components/VisitorCounter';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -13,6 +14,8 @@ export default function Footer() {
             ⚖️ <strong>Legal Name:</strong> Trevmonk Travelsolution Pvt Ltd<br />
             📞 <strong>Contact:</strong> +91 7978578168
           </p>
+
+          <VisitorCounter variant="footer" />
         </div>
 
         <div className={styles.links}>
@@ -47,11 +50,11 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.bottomBar}>
-        <div className="container">
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <p>&copy; {new Date().getFullYear()} Drifter. Brand operated by <strong>Trevmonk Travelsolution Pvt Ltd</strong>. All rights reserved. | Office: Maurya Lok Complex, Patna | Contact: +91 7978578168</p>
+          <VisitorCounter variant="compact" />
         </div>
       </div>
-
     </footer>
   );
 }
