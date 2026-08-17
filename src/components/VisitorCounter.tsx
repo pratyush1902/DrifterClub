@@ -10,36 +10,29 @@ export default function VisitorCounter({ variant = 'footer' }: VisitorCounterPro
   const [visitorCount, setVisitorCount] = useState<number | null>(null);
 
   useEffect(() => {
-    const BASE_VISITORS = 14850;
-    const STORAGE_KEY = 'drifter_visitor_count';
+    let isMounted = true;
 
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      let currentCount: number;
+    // Fetch exact real count from server API route
+    fetch('/api/visitor-count', { cache: 'no-store' })
+      .then((res) => res.json())
+      .then((data) => {
+        if (isMounted && data && typeof data.count === 'number') {
+          setVisitorCount(data.count);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          // Fallback to local session counter if offline
+          const stored = localStorage.getItem('drifter_real_visitor_count');
+          const count = stored ? parseInt(stored, 10) + 1 : 1;
+          localStorage.setItem('drifter_real_visitor_count', count.toString());
+          setVisitorCount(count);
+        }
+      });
 
-      if (stored) {
-        currentCount = parseInt(stored, 10) + 1;
-      } else {
-        // First visit on this device: seed with BASE_VISITORS + slight random offset
-        currentCount = BASE_VISITORS + Math.floor(Math.random() * 45) + 1;
-      }
-
-      localStorage.setItem(STORAGE_KEY, currentCount.toString());
-      setVisitorCount(currentCount);
-
-      // Attempt async count increment via public counter API (failsafe catch)
-      fetch('https://api.counterapi.dev/v1/drifter-club/visits/up')
-        .then(() => fetch('https://api.counterapi.dev/v1/drifter-club/visits'))
-        .then((res) => res.json())
-        .then((data) => {
-          if (data && typeof data.count === 'number' && data.count > 0) {
-            setVisitorCount(BASE_VISITORS + data.count);
-          }
-        })
-        .catch(() => {});
-    } catch {
-      setVisitorCount(BASE_VISITORS + 37);
-    }
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   if (visitorCount === null) {
@@ -62,7 +55,7 @@ export default function VisitorCounter({ variant = 'footer' }: VisitorCounterPro
         border: '1px solid rgba(255, 255, 255, 0.1)'
       }}>
         <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#00E676', display: 'inline-block' }}></span>
-        <strong>{formattedCount}</strong> Explorers Visited
+        <strong>{formattedCount}</strong> Total Visitors
       </span>
     );
   }
@@ -110,7 +103,7 @@ export default function VisitorCounter({ variant = 'footer' }: VisitorCounterPro
           {formattedCount}
         </span>
         <span style={{ marginLeft: '0.35rem', color: 'rgba(244, 240, 230, 0.85)' }}>
-          Explorers & Tribe Members Visited
+          Real Total Website Visitors
         </span>
       </div>
 
