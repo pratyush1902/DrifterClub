@@ -210,7 +210,7 @@ export const ALL_TRIPS: DetailedTrip[] = [
     ctaText: 'SEE THE WEEKEND →',
     date: 'Sep 12-13 | Sep 26-27',
     duration: '2 Days / 1 Night',
-    startingPrice: '₹3,999',
+    startingPrice: '₹4,499',
     spots: '2 Batches Open',
     imageUrl: 'https://images.unsplash.com/photo-1662702641221-aa0149a2806f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     fullVision: 'Escape the city for a quick, high-vibe weekend reset. 2 Days / 1 Night of pine forest camping in Netarhat—fireside BBQ, acoustic music under stargazing skies, Ghaghri waterfall hikes, and Magnolia Point sunrise with a tight 20-person crew.',

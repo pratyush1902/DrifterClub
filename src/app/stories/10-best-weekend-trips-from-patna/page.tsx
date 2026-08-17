@@ -144,7 +144,7 @@ export default function WeekendTripsFromPatnaPage() {
               <div><strong>⏱️ Travel Time:</strong> 8–9 hrs</div>
               <div><strong>🚗 Best Transport:</strong> Train to Ranchi + Taxi or Private Cab</div>
               <div><strong>⏳ Ideal Duration:</strong> 2 Days / 1 Night</div>
-              <div><strong>💰 Budget Range:</strong> ₹3,500 – ₹5,500</div>
+              <div><strong>💰 Budget Range:</strong> ₹4,499 – ₹5,500</div>
               <div><strong>🌤️ Best Season:</strong> Sep – March</div>
             </div>
 

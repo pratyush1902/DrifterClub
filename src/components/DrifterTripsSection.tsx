@@ -109,7 +109,7 @@ export default function DrifterTripsSection() {
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Starting Price</span>
-                  <span className={styles.metaValue}>₹3,999</span>
+                  <span className={styles.metaValue}>₹4,499</span>
                 </div>
               </div>
 
