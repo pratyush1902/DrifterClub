@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Travel Guides & Adventure Stories | Drifter',
     description: 'Field-tested travel guides for travellers starting from Patna. Detailed routes, budgets, itineraries, and trail recaps.',
-    url: 'https://thedrifter.club/stories',
+    url: 'https://www.drifter.buzz/stories',
   },
 };
 

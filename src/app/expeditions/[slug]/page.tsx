@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${trip.title} | Drifter Expeditions`,
       description: `${trip.hook} ${trip.secondaryCopy}`,
-      url: `https://thedrifter.club/expeditions/${trip.slug}`,
+      url: `https://www.drifter.buzz/expeditions/${trip.slug}`,
       images: [
         {
           url: trip.imageUrl,

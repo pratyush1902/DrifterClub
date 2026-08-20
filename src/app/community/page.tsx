@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Community Manifesto & Code | Drifter',
     description: 'Read the Drifter Manifesto. No generic package tours, no cliques—just authentic outdoor community forged outside Patna.',
-    url: 'https://thedrifter.club/community',
+    url: 'https://www.drifter.buzz/community',
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Corporate & Community Partnerships | Drifter',
     description: 'Collaborate with Drifter on custom corporate retreats, college adventure clubs, and fitness workshops in Patna.',
-    url: 'https://thedrifter.club/partnerships',
+    url: 'https://www.drifter.buzz/partnerships',
   },
 };
 

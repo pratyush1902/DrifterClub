@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Curated Expeditions & Travel Drops | Drifter',
     description: 'Explore live and upcoming expedition drops starting from Patna Basecamp. Pokhara, Netarhat, Kasol, Jibhi, and Meghalaya.',
-    url: 'https://thedrifter.club/expeditions',
+    url: 'https://www.drifter.buzz/expeditions',
   },
 };
 

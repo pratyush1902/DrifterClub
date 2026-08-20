@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Events & Meetups in Patna | Drifter',
     description: 'Weekly Sunday runs, trek prep workshops, and social nights in Patna.',
-    url: 'https://thedrifter.club/events',
+    url: 'https://www.drifter.buzz/events',
   },
 };
 

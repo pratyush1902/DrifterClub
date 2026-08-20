@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://thedrifter.club/sitemap.xml',
+    sitemap: 'https://www.drifter.buzz/sitemap.xml',
   };
 }

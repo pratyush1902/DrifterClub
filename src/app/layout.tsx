@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thedrifter.club"),
+  metadataBase: new URL("https://www.drifter.buzz"),
   title: {
     default: "Drifter | Bihar's Modern Adventure & Backpacking Community",
     template: "%s | Drifter",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Bihar adventure community",
     "Patna trekking club",
   ],
-  authors: [{ name: "Drifter Community", url: "https://thedrifter.club" }],
+  authors: [{ name: "Drifter Community", url: "https://www.drifter.buzz" }],
   creator: "Drifter Community",
   publisher: "Trevmonk Travelsolution Pvt Ltd",
   icons: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://thedrifter.club",
+    url: "https://www.drifter.buzz",
     siteName: "Drifter Community",
     title: "Drifter | Bihar's Modern Adventure & Backpacking Community",
     description:

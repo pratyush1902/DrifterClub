@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Drifter | Bihar\'s Premier Adventure & Travel Community',
     description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. Curated weekend trips, Nepal expeditions, and pine forest camping.',
-    url: 'https://thedrifter.club',
+    url: 'https://www.drifter.buzz',
   },
 };
 
