@@ -1,3 +1,15 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Events & Meetups in Patna | Drifter',
+  description: 'Join Drifter\'s weekly Sunday runs, trek prep gear workshops, adventure film socials, and community meetups in Patna, Bihar.',
+  openGraph: {
+    title: 'Events & Meetups in Patna | Drifter',
+    description: 'Weekly Sunday runs, trek prep workshops, and social nights in Patna.',
+    url: 'https://thedrifter.club/events',
+  },
+};
+
 export default function Events() {
   const events = [
     {

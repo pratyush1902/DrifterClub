@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import ActivityTypesSection from '@/components/ActivityTypesSection';
 import DrifterTripsSection from '@/components/DrifterTripsSection';
 import CategoryTripExplorer from '@/components/CategoryTripExplorer';
@@ -5,6 +6,15 @@ import InstagramSection from '@/components/InstagramSection';
 import styles from './Home.module.css';
 import Link from 'next/link';
 
+export const metadata: Metadata = {
+  title: 'Drifter | Bihar\'s Premier Adventure & Travel Community',
+  description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. We organize curated weekend trips, Nepal expeditions, pine forest camping, and backpacking drops.',
+  openGraph: {
+    title: 'Drifter | Bihar\'s Premier Adventure & Travel Community',
+    description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. Curated weekend trips, Nepal expeditions, and pine forest camping.',
+    url: 'https://thedrifter.club',
+  },
+};
 
 export default function Home() {
   return (

@@ -1,5 +1,16 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import InstagramSection from '@/components/InstagramSection';
+
+export const metadata: Metadata = {
+  title: 'Community Manifesto & Code | Drifter',
+  description: 'Read the Drifter Manifesto. We are a private outdoor community in Bihar prioritizing safety, connection, true grit, and unscripted adventures.',
+  openGraph: {
+    title: 'Community Manifesto & Code | Drifter',
+    description: 'Read the Drifter Manifesto. No generic package tours, no cliques—just authentic outdoor community forged outside Patna.',
+    url: 'https://thedrifter.club/community',
+  },
+};
 
 
 const DRIFTER_RULES = [

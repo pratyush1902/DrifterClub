@@ -1,21 +1,17 @@
-'use client';
+import type { Metadata } from 'next';
+import PartnershipForm from '@/components/PartnershipForm';
 
-import { useState } from 'react';
+export const metadata: Metadata = {
+  title: 'Corporate & Community Partnerships | Drifter',
+  description: 'Partner with Drifter. We collaborate with fitness centers, college outdoor clubs, gym owners, and corporate teams in Patna for custom experiences.',
+  openGraph: {
+    title: 'Corporate & Community Partnerships | Drifter',
+    description: 'Collaborate with Drifter on custom corporate retreats, college adventure clubs, and fitness workshops in Patna.',
+    url: 'https://thedrifter.club/partnerships',
+  },
+};
 
 export default function Partnerships() {
-  const [org, setOrg] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!org || !message) return;
-
-    const waText = `Hi Drifter! Partnership Inquiry:\n🏢 *Organization:* ${org}\n✉️ *Email:* ${email || 'N/A'}\n📝 *Details:* ${message}`;
-    const waUrl = `https://wa.me/917978578168?text=${encodeURIComponent(waText)}`;
-    window.open(waUrl, '_blank');
-  };
-
   return (
     <div className="section">
       <div className="container">
@@ -39,34 +35,8 @@ export default function Partnerships() {
             <p style={{ fontSize: '0.95rem', color: 'var(--color-forest)', margin: '0.3rem 0 1rem 0' }}>
               📞 <strong>Direct Phone Line:</strong> <a href="tel:+917978578168" style={{ color: 'var(--color-amber)', fontWeight: 'bold' }}>+91 79785 78168</a>
             </p>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-sm)', marginTop: 'var(--spacing-sm)' }}>
-              <input 
-                type="text" 
-                required
-                placeholder="Organization Name *" 
-                value={org}
-                onChange={(e) => setOrg(e.target.value)}
-                style={{ padding: '0.8rem', borderRadius: 'var(--radius-sm)', border: '1px solid #ccc' }} 
-              />
-              <input 
-                type="email" 
-                placeholder="Email Address" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                style={{ padding: '0.8rem', borderRadius: 'var(--radius-sm)', border: '1px solid #ccc' }} 
-              />
-              <textarea 
-                required
-                placeholder="How can we partner? *" 
-                rows={4} 
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                style={{ padding: '0.8rem', borderRadius: 'var(--radius-sm)', border: '1px solid #ccc', fontFamily: 'var(--font-body)' }}
-              ></textarea>
-              <button type="submit" className="btn btn-primary" style={{ alignSelf: 'flex-start' }}>
-                Send Inquiry via WhatsApp →
-              </button>
-            </form>
+            
+            <PartnershipForm />
           </div>
           <div style={{ 
             height: '100%', 

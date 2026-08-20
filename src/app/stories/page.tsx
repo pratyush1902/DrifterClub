@@ -1,4 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Travel Guides & Adventure Stories | Drifter',
+  description: 'Comprehensive, field-tested travel guides for travellers starting from Patna, Bihar. Nepal budget guides, Kasol, Jibhi, Meghalaya, and weekend getaways.',
+  openGraph: {
+    title: 'Travel Guides & Adventure Stories | Drifter',
+    description: 'Field-tested travel guides for travellers starting from Patna. Detailed routes, budgets, itineraries, and trail recaps.',
+    url: 'https://thedrifter.club/stories',
+  },
+};
 
 export default function Stories() {
   return (

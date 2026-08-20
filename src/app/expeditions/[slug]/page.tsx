@@ -1,10 +1,39 @@
 import { use } from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTripBySlug } from '@/data/trips';
 import TripDetailView from '@/components/TripDetailView';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const trip = getTripBySlug(resolvedParams.slug);
+
+  if (!trip) {
+    return {
+      title: 'Trip Not Found | Drifter',
+      description: 'The requested adventure trail does not exist.',
+    };
+  }
+
+  return {
+    title: `${trip.title} | Drifter Expeditions`,
+    description: `${trip.hook} Join Drifter's curated ${trip.duration} drop in ${trip.location}. Starting price: ${trip.startingPrice}.`,
+    openGraph: {
+      title: `${trip.title} | Drifter Expeditions`,
+      description: `${trip.hook} ${trip.secondaryCopy}`,
+      url: `https://thedrifter.club/expeditions/${trip.slug}`,
+      images: [
+        {
+          url: trip.imageUrl,
+          alt: trip.title,
+        },
+      ],
+    },
+  };
 }
 
 export default function TripDetailPage({ params }: PageProps) {
@@ -69,4 +98,3 @@ export default function TripDetailPage({ params }: PageProps) {
 
   return <TripDetailView trip={trip} />;
 }
-
