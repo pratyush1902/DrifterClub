@@ -3,6 +3,26 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Nepal Trip from Patna: Complete Budget Travel Guide for 2026 | Drifter',
   description: 'Planning a Nepal trip from Patna? Complete 2026 guide covering routes, Raxaul border crossing, Kathmandu vs Pokhara, budget breakdown, and packing tips.',
+  openGraph: {
+    title: 'Patna to Nepal Trip: Complete Backpacking & Budget Guide 2026',
+    description: 'Planning a Nepal trip from Patna? Complete guide covering Raxaul border crossing, Kathmandu vs Pokhara, Voter ID rules, Tata Sumo fares, and budgets.',
+    url: 'https://www.drifter.buzz/stories/nepal-trip-from-patna',
+    type: 'article',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: 'Patna to Nepal Travel Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Patna to Nepal Trip: Complete Backpacking Guide 2026',
+    description: 'Raxaul border crossing, Pokhara treks, Tata Sumo fares, Voter ID rules, and budget breakdown from Patna.',
+    images: ['https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop'],
+  },
 };
 
 export default function NepalTripFromPatnaPage() {

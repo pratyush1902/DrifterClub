@@ -3,6 +3,26 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Patna to Kasol: Complete Backpacking Guide, Route, Cost & Itinerary for 2026 | Drifter',
   description: 'Planning a Patna to Kasol trip? Complete 2026 guide covering routes via Delhi/Chandigarh, Bhuntar bus transfers, Tosh treks, budgets & packing.',
+  openGraph: {
+    title: 'Patna to Kasol: Complete Backpacking Guide for 2026',
+    description: 'Looking to travel from Patna to Kasol? Complete 2026 backpacking guide with train routes, Tosh treks, Parvati Valley cafes, and budgets.',
+    url: 'https://www.drifter.buzz/stories/patna-to-kasol',
+    type: 'article',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: 'Patna to Kasol Himachal Backpacking Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Patna to Kasol: Complete Backpacking Guide for 2026',
+    description: 'Train routes, Bhuntar buses, Parvati valley cafes, Tosh treks, and budget breakdown from Patna.',
+    images: ['https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop'],
+  },
 };
 
 export default function PatnaToKasolPage() {

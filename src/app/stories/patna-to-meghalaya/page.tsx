@@ -3,6 +3,26 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Patna to Meghalaya: Complete Backpacking Guide, Route, Cost & Itinerary for 2026 | Drifter',
   description: 'Planning a Patna to Meghalaya trip? Complete 2026 guide covering Guwahati transit, Cherrapunji waterfalls, Nongriat root bridges, Dawki camping & budgets.',
+  openGraph: {
+    title: 'Patna to Meghalaya: Complete Backpacking Guide for 2026',
+    description: 'Complete 2026 Patna to Meghalaya guide: Guwahati flight/train, Shillong, Sohra waterfalls, Nongriat double decker root bridge, and Dawki.',
+    url: 'https://www.drifter.buzz/stories/patna-to-meghalaya',
+    type: 'article',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: 'Patna to Meghalaya Travel Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Patna to Meghalaya: Complete Backpacking Guide for 2026',
+    description: 'Guwahati transit, Cherrapunji waterfalls, Nongriat root bridges, Dawki camping, and budget breakdown.',
+    images: ['https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop'],
+  },
 };
 
 export default function PatnaToMeghalayaPage() {

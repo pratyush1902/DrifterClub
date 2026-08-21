@@ -3,6 +3,26 @@ import Link from 'next/link';
 export const metadata = {
   title: '10 Best Weekend Trips from Patna for 2026 | Drifter Community',
   description: 'Looking to escape Patna this weekend? Discover the 10 best weekend trips from Patna for 2026—from Netarhat pine camping & Rajgir to Nepal & Darjeeling.',
+  openGraph: {
+    title: '10 Best Weekend Trips from Patna for 2026',
+    description: 'Discover the 10 best weekend getaways from Patna—from Netarhat pine camping & Rajgir to Nepal & Darjeeling.',
+    url: 'https://www.drifter.buzz/stories/10-best-weekend-trips-from-patna',
+    type: 'article',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: '10 Best Weekend Trips from Patna',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '10 Best Weekend Trips from Patna for 2026',
+    description: 'Discover the 10 best weekend getaways from Patna—from Netarhat pine camping to Nepal.',
+    images: ['https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop'],
+  },
 };
 
 export default function WeekendTripsFromPatnaPage() {

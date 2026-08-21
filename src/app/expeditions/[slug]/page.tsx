@@ -33,6 +33,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${trip.title} | Drifter Expeditions`,
+      description: `${trip.hook} Starting price: ${trip.startingPrice}.`,
+      images: [trip.imageUrl],
+    },
   };
 }
 

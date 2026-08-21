@@ -3,6 +3,26 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Patna to Jibhi: Complete Offbeat Himachal Backpacking Guide for 2026 | Drifter',
   description: 'Planning a Patna to Jibhi trip? Complete 2026 offbeat guide covering Aut transit, Jalori Pass, Serolsar Lake, Shoja stays, budgets & packing.',
+  openGraph: {
+    title: 'Patna to Jibhi: Complete Offbeat Himachal Backpacking Guide 2026',
+    description: 'Looking for a quiet alternative to Manali? Patna to Jibhi complete guide: Aut tunnel transit, Jalori Pass, Serolsar Lake, Shoja stays, and costs.',
+    url: 'https://www.drifter.buzz/stories/patna-to-jibhi',
+    type: 'article',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop',
+        width: 1200,
+        height: 630,
+        alt: 'Patna to Jibhi Travel Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Patna to Jibhi: Complete Offbeat Himachal Guide 2026',
+    description: 'Aut transit, Jalori pass trek, Shoja stays, and budget breakdown from Patna.',
+    images: ['https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop'],
+  },
 };
 
 export default function PatnaToJibhiPage() {
