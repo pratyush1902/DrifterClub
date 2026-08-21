@@ -29,11 +29,12 @@ export const metadata: Metadata = {
   publisher: "Trevmonk Travelsolution Pvt Ltd",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
   verification: {
     google: "NwccIIfj64r8nJvdVerX4JQ1VBzCTFZHeYX1KITdZVk",
