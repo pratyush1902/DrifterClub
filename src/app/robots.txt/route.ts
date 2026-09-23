@@ -5,7 +5,8 @@ export async function GET() {
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.drifter.buzz/sitemap.xml`;
+Sitemap: https://www.drifter.buzz/sitemap.xml
+Sitemap: https://www.drifter.buzz/google-sitemap.xml`;
 
   return new Response(content, {
     status: 200,
