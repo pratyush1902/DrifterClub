@@ -15,7 +15,7 @@ export default function DrifterTripsSection() {
         {/* SECTION 01 — LIVE EXPERIENCES (HAPPENING NOW) */}
         {/* ================================================== */}
         <div className={styles.sectionHeader}>
-          <span className={styles.headlineLabel}>SECTION 01 — HAPPENING NOW</span>
+          <span className={styles.headlineLabel}>LIVE EXPERIENCES</span>
           <h2 className={styles.mainHeadline}>HAPPENING NOW.</h2>
           <p className={styles.subHeadline}>
             “Some weekends are planned. Some become stories.”
@@ -23,7 +23,7 @@ export default function DrifterTripsSection() {
         </div>
 
         <div className={styles.liveGrid}>
-          {/* HERO TRIP — POKHARA PARTY × SECRET TREK */}
+          {/* HERO TRIP 01 — POKHARA PARTY × SECRET TREK */}
           <Link 
             href="/expeditions/pokhara-party-secret-trek" 
             className={`${styles.tripCard} ${styles.heroCard}`}
@@ -51,7 +51,7 @@ export default function DrifterTripsSection() {
               <div className={styles.cardMeta}>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Schedule</span>
-                  <span className={styles.metaValue}>Upcoming Adventure in November & December</span>
+                  <span className={styles.metaValue}>November & December</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Duration</span>
@@ -63,7 +63,7 @@ export default function DrifterTripsSection() {
             </div>
           </Link>
 
-          {/* SECOND TRIP — SECRET SPOT IN HIMALAYA */}
+          {/* TRIP 02 — SECRET SPOT IN HIMALAYA */}
           <Link 
             href="/expeditions/secret-himalaya-spot-getaway" 
             className={`${styles.tripCard} ${styles.secondaryCard}`}
@@ -91,7 +91,7 @@ export default function DrifterTripsSection() {
               <div className={styles.cardMeta}>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Schedule</span>
-                  <span className={styles.metaValue}>Upcoming Adventure in November & December</span>
+                  <span className={styles.metaValue}>November & December</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Duration</span>
@@ -104,19 +104,8 @@ export default function DrifterTripsSection() {
           </Link>
         </div>
 
-
-        {/* ================================================== */}
-        {/* SECTION 02 — MORE LIVE EXPERIENCES (NOV & DEC) */}
-        {/* ================================================== */}
-        <div className={styles.sectionHeader} style={{ marginTop: '4rem' }}>
-          <span className={styles.headlineLabel}>SECTION 02 — NOVEMBER & DECEMBER ADVENTURES</span>
-          <h2 className={styles.mainHeadline}>UPCOMING ADVENTURES IN NOVEMBER & DECEMBER.</h2>
-          <p className={styles.subHeadline}>
-            “Pick a weekend. We'll give you a story.”
-          </p>
-        </div>
-
-        <div className={styles.upcomingGrid}>
+        {/* ADDITIONAL LIVE DROPS */}
+        <div className={styles.upcomingGrid} style={{ marginTop: '2.5rem' }}>
           {/* TRIP 03 — MANEBHANJAN WITH SANDAKPHU */}
           <Link 
             href="/expeditions/manebhanjan-sandakphu-trek" 
@@ -138,7 +127,7 @@ export default function DrifterTripsSection() {
               <div className={styles.cardMeta} style={{ marginTop: '0.8rem' }}>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Schedule</span>
-                  <span className={styles.metaValue}>Upcoming Adventure in November & December</span>
+                  <span className={styles.metaValue}>November & December</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaLabel}>Duration</span>

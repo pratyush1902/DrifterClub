@@ -209,51 +209,72 @@ export const ALL_TRIPS: DetailedTrip[] = [
     ],
     experienceFlow: [
       {
-        vibeTag: 'DAY 01 • THE DEPARTURE & PINELAND',
-        title: 'Overnight Road Trip into Pine Country',
-        tagline: 'Scenic Mountain Drive, Wooden Chalets & Sunset Chill',
-        description: 'Depart from Patna Basecamp. Arrive at our secret Himalayan valley by morning. Check into cozy wooden chalets surrounded by towering pines, grab fresh artisanal mountain tea, and take a light orientation hike to a secret sunset view point.',
-        icon: '🌲'
+        vibeTag: 'OVERNIGHT • THE DEPARTURE',
+        title: 'Night Travel to Secret Spot from Patna Basecamp',
+        tagline: 'Overnight Journey, Tribe Icebreakers & Winding Mountain Roads',
+        description: 'Meet your crew at Patna Basecamp in the evening. Depart on an overnight journey as we leave the city lights behind, head towards the Himalayas, break the ice with fellow travellers, and wake up surrounded by crisp pine air.',
+        icon: '🚌'
       },
       {
-        vibeTag: 'DAY 02 • THE RIDGE & THE FIRE',
-        title: 'Secret Alpine Trail & Campfire Night',
-        tagline: 'Hidden Stream Hikes, Ridge Views & Acoustic BBQ',
-        description: 'Hike up an undisclosed mountain ridge far away from commercial tourist crowds. Cross clear alpine streams, soak in 360-degree Himalayan snow peak views, and gather at night for an unscripted acoustic campfire session with tribal BBQ.',
+        vibeTag: 'DAY 01 • THE LANDING & THE FIRE',
+        title: 'Check-in, Explore Like a Local, Sunset & Bonfire Fun',
+        tagline: 'Chalet Check-in, Secret Sunset Point, Acoustic Jams & Lots of Fun',
+        description: 'Arrive at our secret Himalayan location and check into cozy wooden chalets. Grab fresh mountain tea and explore the village like a local—secret spots, hidden cafes, and pine-scented paths. Head to an undisclosed ridge to watch a stunning Himalayan sunset, followed by a bonfire night packed with music, games, barbecue, and lots of unscripted fun.',
         icon: '🔥'
       },
       {
-        vibeTag: 'DAY 03 • THE SUNRISE & RETURN',
-        title: 'Golden Peak Sunrise & Return to Base',
-        tagline: 'Morning Fog, Cafe Brews & Journey Back to Patna',
-        description: 'Wake up to crisp mountain air and golden peak sunrises. Enjoy a hearty alpine breakfast, share photos and inside jokes with your crew, and head back to Patna fully recharged.',
-        icon: '🌅'
+        vibeTag: 'DAY 02 • THE RIDGE & THE VIBES',
+        title: 'Golden Sunrise, Small Hike, Local Exploration & Fun Session',
+        tagline: 'Morning Peak Sunrise, Alpine Hike, Local Secret Trails & Tribe Games',
+        description: 'Wake up to a golden 360-degree peak sunrise with hot chai. Set out on a small scenic hike through pristine pine and fir forests along hidden mountain streams. Explore the surroundings like a local, sample authentic mountain delicacies, and dive into interactive Drifter fun sessions, tribe stories, and acoustic evening vibes.',
+        icon: '⛰️'
+      },
+      {
+        vibeTag: 'DAY 03 • CHECKOUT & RETURN',
+        title: 'Checkout & Travel Back to Patna',
+        tagline: 'Morning Reset, Farewells & Journey Back to Patna Basecamp',
+        description: 'Enjoy a relaxed morning breakfast with panoramic peak views. Complete checkout, pack your bags with unforgettable mountain memories and inside jokes, and board our transport for the journey back to Patna Basecamp fully recharged.',
+        icon: '🌄'
       }
     ],
-    inclusions: [
-      'Round-trip transportation from Patna Basecamp',
-      'Triple-sharing stay in cozy wooden mountain chalets',
-      'Daily breakfast as mentioned in experience flow',
-      'Daily dinner as mentioned in experience flow',
-      'Experienced Drifter Trip Captain with the group',
-      'Trip photos, moments & inside jokes',
-      'A small useful Drifter gift'
+    itinerary: [
+      {
+        day: 'Night Departure',
+        time: '08:00 PM',
+        location: 'Patna Basecamp to Secret Spot',
+        title: 'Night Travel from Patna Basecamp',
+        activity: 'Overnight journey towards the Himalayas with tribe icebreakers and road trip vibes.',
+        meals: 'Trail Snacks',
+        stay: 'Overnight Bus / Traveller'
+      },
+      {
+        day: 'Day 01',
+        time: '09:00 AM',
+        location: 'Secret Himalayan Valley',
+        title: 'Check-in, Explore Like a Local, Sunset & Bonfire Fun',
+        activity: 'Chalet check-in, fresh mountain tea, local village exploration, secret ridge sunset, and late-night acoustic campfire BBQ fun.',
+        meals: 'Welcome Tea + Dinner',
+        stay: 'Cozy Wooden Alpine Chalet'
+      },
+      {
+        day: 'Day 02',
+        time: '06:30 AM',
+        location: 'Secret Ridge & Pine Trails',
+        title: 'Sunrise, Small Hike, Local Exploration & Tribe Fun Session',
+        activity: 'Golden peak sunrise, scenic small hike along alpine streams, exploring local trails, local cafe chill, and Drifter evening fun session.',
+        meals: 'Breakfast + Dinner',
+        stay: 'Cozy Wooden Alpine Chalet'
+      },
+      {
+        day: 'Day 03',
+        time: '10:00 AM',
+        location: 'Secret Spot to Patna',
+        title: 'Checkout & Travel Back to Patna Basecamp',
+        activity: 'Morning breakfast with peak views, chalet checkout, group photo, and travel back to Patna.',
+        meals: 'Breakfast',
+        stay: 'Return Journey'
+      }
     ],
-    exclusions: [
-      'Personal expenses & shopping',
-      'Lunches & personal trail snacks',
-      'Anything outside the planned experience'
-    ],
-    startingPoint: 'Patna Basecamp',
-    endingPoint: 'Patna Basecamp',
-    stayType: 'Cozy Wooden Alpine Chalet',
-    transportType: 'Group Bus & Private Mountain Transfers',
-    mealsInfo: 'Breakfast + Dinner',
-    groupSize: '16 Drifters Max',
-    difficulty: 'Easy / Moderate',
-    participantCount: 12,
-    drifterAvatars: ['/images/bihar.jpg', '/images/hero.jpg', '/images/trek1.jpg'],
-    itinerary: [],
     faqs: [
       {
         question: 'Why is the location secret?',
@@ -353,28 +374,117 @@ export const ALL_TRIPS: DetailedTrip[] = [
     startingPrice: '',
     spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1584884789751-68dd2836ada1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'Backpack from Manebhanjan through Tumling and Kalipokhri along the Singalila Ridge. Experience vintage 1950s Land Rovers, high-altitude Indo-Nepal tea houses, and unobstructed views of the Sleeping Buddha massif featuring Mount Everest, Kanchenjunga, Lhotse, and Makalu.',
+    fullVision: 'Travel from Patna Basecamp to Siliguri by bus, then take the scenic offbeat road less taken up to Manebhanjan. Experience cozy homestay hospitality where India and Nepal meet in one border town. Ride a legendary 100-year-old vintage Land Rover cab up to Sandakphu summit and witness top high Himalayan peaks (Everest & Kanchenjunga Sleeping Buddha) at the same place before returning back.',
     highlights: [
-      'Iconic Manebhanjan basecamp & vintage Land Rover drive',
-      'Panoramic views of 4 of the 5 highest peaks in the world',
-      'Cloudwalk along the high-altitude Singalila Ridge',
-      'Indo-Nepal tea house stays & cultural trail meals'
+      'Overnight bus from Patna to Siliguri & scenic offbeat cab drive to Manebhanjan',
+      'Cozy mountain homestay stay with Indo-Nepal border exploration at one spot',
+      'Iconic 100-year-old vintage Land Rover 4x4 cab ride up to Sandakphu',
+      'Panoramic view of Everest, Kanchenjunga Sleeping Buddha, Lhotse & Makalu (if weather permits)',
+      'Return back down to Manebhanjan & seamless travel back to Patna'
     ],
     availableBatches: [
       'November 2026 Batches Open',
       'December 2026 Batches Open'
     ],
-    inclusions: ['Round-trip transport from Patna', 'Tea House stay', 'Breakfast & Dinner', 'Permits & Captain'],
-    exclusions: ['Personal expenses', 'Lunch'],
-    startingPoint: 'Patna',
-    endingPoint: 'Patna',
-    stayType: 'Tea House Lodges',
-    transportType: 'Group Bus & Vintage Land Rover',
+    experienceFlow: [
+      {
+        vibeTag: 'DAY 00 • OVERNIGHT BUS',
+        title: 'Patna to Siliguri Night Journey',
+        tagline: 'Overnight Bus from Patna Basecamp to Siliguri Hub',
+        description: 'Meet the crew at Patna Basecamp in the evening and board an overnight comfortable bus to Siliguri, leaving the plains behind and heading towards the eastern Himalayas.',
+        icon: '🚌'
+      },
+      {
+        vibeTag: 'DAY 01 • THE ROAD LESS TAKEN',
+        title: 'Siliguri to Manebhanjan Cab, Homestay & Indo-Nepal Border Explore',
+        tagline: 'Scenic Offbeat Drive, Cozy Homestay & Dual-Country Border Vibes',
+        description: 'Hop into private cabs from Siliguri and take the road less taken winding through lush tea gardens and pine forests to Manebhanjan. Check into a cozy mountain homestay and explore India and Nepal at the exact same place—cross-border culture, hot momos, and unique mountain life.',
+        icon: '🏡'
+      },
+      {
+        vibeTag: 'DAY 02 • VINTAGE LAND ROVER & TOP PEAKS',
+        title: '100-Year-Old Vintage Land Rover to Sandakphu Summit',
+        tagline: 'Iconic 4x4 Trail Ride, Everest & Sleeping Buddha Peak Views',
+        description: 'Grab a legendary 100-year-old vintage Land Rover cab to navigate the rugged steep trail up to Sandakphu (11,930 ft). If weather is kind, witness top Himalayan peaks at the exact same spot—Mount Everest, Kanchenjunga (The Sleeping Buddha), Lhotse, and Makalu! Soak in the panoramic views before returning back down to Manebhanjan for the night.',
+        icon: '🚙'
+      },
+      {
+        vibeTag: 'DAY 03 • THE RETURN JOURNEY',
+        title: 'Manebhanjan to Siliguri & Return Back to Patna',
+        tagline: 'Morning Tea, Scenic Descent & Overnight Return to Patna',
+        description: 'Enjoy morning homestay breakfast in Manebhanjan before heading down to Siliguri in private cabs, followed by the return bus back to Patna Basecamp with epic mountain memories.',
+        icon: '🌄'
+      }
+    ],
+    itinerary: [
+      {
+        day: 'Day 00',
+        time: '07:30 PM',
+        location: 'Patna to Siliguri',
+        title: 'Night Travel from Patna Basecamp',
+        activity: 'Overnight comfortable bus journey from Patna to Siliguri with tribe introduction.',
+        meals: 'Trail Snacks',
+        stay: 'Overnight Bus'
+      },
+      {
+        day: 'Day 01',
+        time: '08:00 AM',
+        location: 'Siliguri to Manebhanjan',
+        title: 'Scenic Cab Drive, Homestay Check-in & Indo-Nepal Border Explore',
+        activity: 'Private cab from Siliguri via scenic road less taken to Manebhanjan. Check in to homestay, explore India and Nepal border at the same location, try local tea house food.',
+        meals: 'Welcome Tea + Dinner',
+        stay: 'Cozy Manebhanjan Homestay'
+      },
+      {
+        day: 'Day 02',
+        time: '06:00 AM',
+        location: 'Manebhanjan to Sandakphu Peak & Back',
+        title: '100-Year-Old Vintage Land Rover Ride to Sandakphu Summit',
+        activity: 'Ride legendary 100-year-old vintage Land Rover to Sandakphu summit. Catch panoramic views of Everest, Kanchenjunga Sleeping Buddha, Lhotse & Makalu (if weather permits) before returning back down to Manebhanjan.',
+        meals: 'Breakfast + Dinner',
+        stay: 'Cozy Manebhanjan Homestay'
+      },
+      {
+        day: 'Day 03',
+        time: '09:00 AM',
+        location: 'Manebhanjan to Siliguri & Patna',
+        title: 'Checkout & Return Journey Back to Patna',
+        activity: 'Morning breakfast, cab drive down to Siliguri, and board evening bus back to Patna Basecamp.',
+        meals: 'Breakfast',
+        stay: 'Return Journey'
+      }
+    ],
+    inclusions: [
+      'Round-trip bus transport between Patna and Siliguri',
+      'Private cab transfers between Siliguri and Manebhanjan',
+      'Vintage 100-year-old Land Rover cab ride from Manebhanjan to Sandakphu & return',
+      'Cozy homestay accommodation in Manebhanjan',
+      'Daily breakfast & dinner as specified',
+      'Experienced Drifter Trip Captain',
+      'Singalila National Park & entry permits'
+    ],
+    exclusions: ['Personal expenses & lunches', 'Anything not mentioned in inclusions'],
+    startingPoint: 'Patna Basecamp',
+    endingPoint: 'Patna Basecamp',
+    stayType: 'Cozy Mountain Homestay',
+    transportType: 'Group Bus, Private Cab & Vintage Land Rover 4x4',
     mealsInfo: 'Breakfast + Dinner',
-    groupSize: '14 Drifters',
-    difficulty: 'Moderate Trek',
-    itinerary: [],
-    faqs: []
+    groupSize: '14 Drifters Max',
+    difficulty: 'Easy / Moderate',
+    faqs: [
+      {
+        question: 'What makes the Manebhanjan Land Rover ride famous?',
+        answer: 'Manebhanjan is home to a fleet of historic 100-year-old vintage British Land Rovers—one of the few places on Earth where these legendary 4x4 machines still conquer steep Himalayan terrain!'
+      },
+      {
+        question: 'Can we see Mount Everest and Kanchenjunga together?',
+        answer: 'Yes! Sandakphu offers one of the rare vantage points where you can see 4 of the 5 highest peaks in the world (Everest, Kanchenjunga, Lhotse, Makalu) in one single panorama if weather is kind.'
+      },
+      {
+        question: 'Do we need a passport or visa to explore the Nepal side in Manebhanjan?',
+        answer: 'No passport or visa is required for Indian citizens along the open Indo-Nepal border region at Manebhanjan.'
+      }
+    ]
   }
 ];
 
