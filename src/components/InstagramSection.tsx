@@ -18,15 +18,15 @@ const INSTA_POSTS = [
   {
     id: 3,
     image: '/images/manifesto.jpg',
-    tag: 'NETARHAT PINES',
-    caption: 'Pine forest coffee & cold mountain breeze. This is your sign to skip town this weekend. ☕🌲',
-    likes: '980'
+    tag: 'SECRET HIMALAYA',
+    caption: 'Alpine pine forest coffee & cold mountain breeze. Your sign to reset this weekend. ☕🌲',
+    likes: '1.4k'
   },
   {
     id: 4,
     image: '/images/bihar.jpg',
-    tag: 'ROHTASGARH CLIFFS',
-    caption: 'Camping inside ancient fort ruins over Kaimur valley. Reclaiming Bihar’s outdoors. ⛺⚔️',
+    tag: 'MANEBHANJAN RIDGE',
+    caption: 'Vintage Land Rovers & high-altitude clouds along the Singalila ridge. ⛺🏔️',
     likes: '1.8k'
   }
 ];

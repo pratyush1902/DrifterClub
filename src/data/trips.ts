@@ -70,11 +70,11 @@ export const ALL_TRIPS: DetailedTrip[] = [
     hook: 'Party before bed. Disappear into the mountains at sunrise.',
     secondaryCopy: 'Lakeshore club hopping, offbeat artisanal cafes, party before bed, then deep calm & peace on an offbeat mountain trek.',
     curiosityLine: '4 Days / 3 Nights of pure contrast: loud nights & quiet mountains.',
-    ctaText: 'CHOOSE YOUR BATCH →',
-    date: 'Sep 11-14 | Sep 18-21',
+    ctaText: 'EXPLORE DROP →',
+    date: 'Upcoming Adventure in November & December',
     duration: '4 Days / 3 Nights',
-    startingPrice: '₹10,998',
-    spots: '2 Batches Open',
+    startingPrice: '',
+    spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1722595631756-170e6905dfb7?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     fullVision: 'Forget rigid, boring itineraries. This 4D/3N Pokhara drop is built on pure contrast. We start in Pokhara with offbeat cafe crawling, lakeshore sunsets, and electrifying club hopping with a party before bed. Then we flip the switch—disappearing into an offbeat secret mountain trek for deep calm, serene Annapurna ridge views, and campfire acoustic stargazing.',
 
@@ -86,8 +86,8 @@ export const ALL_TRIPS: DetailedTrip[] = [
       'Patna Basecamp group travel coordinator'
     ],
     availableBatches: [
-      'Batch 1: 11 Sept - 14 Sept',
-      'Batch 2: 18 Sept - 21 Sept'
+      'November 2026 Batches Open',
+      'December 2026 Batches Open'
     ],
     experienceFlow: [
       {
@@ -173,180 +173,125 @@ export const ALL_TRIPS: DetailedTrip[] = [
         answer: '100% refund up to 14 days before departure, or full credit roll-over for any future Drifter drop.'
       },
       {
-        question: 'What is included in the price?',
-        answer: 'Patna round-trip transport, triple-sharing stay, daily breakfast & dinner, permits, Trip Captain & surprise Drifter gift.'
-      },
-      {
-        question: 'What isn\'t included?',
-        answer: 'Personal shopping, lunches, extra snacks, and optional adventure sports like paragliding.'
-      },
-      {
-        question: 'How difficult is the trek?',
-        answer: 'Moderate difficulty. Basic physical fitness is required, but you don’t need to be an extreme athlete.'
-      },
-      {
         question: 'Where do we meet in Patna?',
         answer: 'We meet at Drifter Patna Basecamp (Eco Park area) for pre-departure briefing.'
-      },
-      {
-        question: 'Can I get a private room?',
-        answer: 'Trips default to triple-sharing for group bonding, but twin/private upgrades are available upon request.'
-      },
-      {
-        question: 'Can I choose who I share a room with?',
-        answer: 'Yes! If you join with friends, let us know and we’ll room you together.'
       }
     ]
   },
   {
-    slug: 'netarhat-camping',
+    slug: 'secret-himalaya-spot-getaway',
     badge: 'LIVE NOW',
-    title: 'NETARHAT CAMPING',
-    category: 'Bihar',
-    location: 'Netarhat Pine Forests & Magnolia Point',
+    title: 'SECRET SPOT IN HIMALAYA',
+    category: 'Himachal',
+    location: 'Undisclosed Alpine Ridge, Himachal Himalayas',
     status: 'LIVE DROP',
-    hook: 'The ultimate 2D/1N weekend getaway into the pine forests.',
-    secondaryCopy: 'Wilderness camping, pine forest air, campfire BBQ, and Magnolia Point sunrise.',
-    ctaText: 'SEE THE WEEKEND →',
-    date: 'Sep 12-13 | Sep 26-27',
-    duration: '2 Days / 1 Night',
-    startingPrice: '₹4,499',
-    spots: '2 Batches Open',
-    imageUrl: 'https://images.unsplash.com/photo-1662702641221-aa0149a2806f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'Escape the city for a quick, high-vibe weekend reset. 2 Days / 1 Night of pine forest camping in Netarhat—fireside BBQ, acoustic music under stargazing skies, Ghaghri waterfall hikes, and Magnolia Point sunrise with a tight 20-person crew.',
+    hook: 'An offbeat high-altitude secret sanctuary tucked away from tourist crowds.',
+    secondaryCopy: 'Pine forest trails, hidden alpine streams, wooden chalets, campfire acoustic jams, and 360-degree snow peak sunsets.',
+    curiosityLine: '3 Days / 2 Nights of pure mountain reset in undisclosed Himalayan wilderness.',
+    ctaText: 'EXPLORE THE SECRET →',
+    date: 'Upcoming Adventure in November & December',
+    duration: '3 Days / 2 Nights',
+    startingPrice: '',
+    spots: 'Batches Open for Nov & Dec',
+    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop',
+    fullVision: 'Escape the commercial noise and step into an undisclosed secret sanctuary tucked away in the high-altitude Himachal Himalayas. We hike through untouched pine and fir forests, stay in authentic wooden chalets, chill by crystal mountain streams, and spend our evenings around campfire acoustic sessions under a million stars.',
 
     highlights: [
-      'Overnight pine forest wilderness camping & campfire BBQ',
-      'Sunrise coffee & acoustic tunes at Magnolia Point',
-      'Ghaghri waterfall hikes & pine needle forest walk',
-      'Stargazing under clear unpolluted night skies',
-      'Patna Basecamp round-trip transport & Captain guided'
+      'Untouched high-altitude pine & fir forest ridge hikes',
+      'Cozy wooden chalet stays & mountain stream relaxation',
+      'Campfire acoustic stargazing & tribe barbecue night',
+      '360-degree Himalayan snow peak sunset views',
+      'Patna Basecamp group transport & Trip Captain guided'
     ],
     availableBatches: [
-      'Batch 1: 12 Sept - 13 Sept',
-      'Batch 2: 26 Sept - 27 Sept'
+      'November 2026 Batches Open',
+      'December 2026 Batches Open'
     ],
-
     experienceFlow: [
       {
-        vibeTag: 'DAY 01 • THE GETAWAY (SATURDAY)',
-        title: 'Pine Forest Camping & Campfire Night',
-        tagline: 'Road Trip, Pine Needle Trails & Midnight Barbecue',
-        description: 'Depart early from Patna. Reach the crisp pine forests of Netarhat by afternoon. Set up waterproof tents under the tall pines, catch a panoramic sunset at Magnolia Point, and gather around the campfire for BBQ & acoustic tunes.',
-        icon: '⛺'
+        vibeTag: 'DAY 01 • THE DEPARTURE & PINELAND',
+        title: 'Overnight Road Trip into Pine Country',
+        tagline: 'Scenic Mountain Drive, Wooden Chalets & Sunset Chill',
+        description: 'Depart from Patna Basecamp. Arrive at our secret Himalayan valley by morning. Check into cozy wooden chalets surrounded by towering pines, grab fresh artisanal mountain tea, and take a light orientation hike to a secret sunset view point.',
+        icon: '🌲'
       },
       {
-        vibeTag: 'DAY 02 • THE RESET (SUNDAY)',
-        title: 'Sunrise Coffee & Waterfall Hike',
-        tagline: 'Morning Fog, Ghaghri Waterfalls & Return to Patna',
-        description: 'Wake up to crisp forest air and hot coffee. Take a scenic trail hike to Ghaghri Waterfalls, explore pine needle paths, enjoy a hearty group breakfast, and head back to Patna recharged for the week.',
-        icon: '🌲'
+        vibeTag: 'DAY 02 • THE RIDGE & THE FIRE',
+        title: 'Secret Alpine Trail & Campfire Night',
+        tagline: 'Hidden Stream Hikes, Ridge Views & Acoustic BBQ',
+        description: 'Hike up an undisclosed mountain ridge far away from commercial tourist crowds. Cross clear alpine streams, soak in 360-degree Himalayan snow peak views, and gather at night for an unscripted acoustic campfire session with tribal BBQ.',
+        icon: '🔥'
+      },
+      {
+        vibeTag: 'DAY 03 • THE SUNRISE & RETURN',
+        title: 'Golden Peak Sunrise & Return to Base',
+        tagline: 'Morning Fog, Cafe Brews & Journey Back to Patna',
+        description: 'Wake up to crisp mountain air and golden peak sunrises. Enjoy a hearty alpine breakfast, share photos and inside jokes with your crew, and head back to Patna fully recharged.',
+        icon: '🌅'
       }
     ],
     inclusions: [
-      'Round-trip transportation from Patna to Patna',
-      'Triple-sharing camping tents & gear stay',
-      'Daily breakfast as mentioned in the experience flow',
-      'Daily dinner as mentioned in the experience flow',
+      'Round-trip transportation from Patna Basecamp',
+      'Triple-sharing stay in cozy wooden mountain chalets',
+      'Daily breakfast as mentioned in experience flow',
+      'Daily dinner as mentioned in experience flow',
       'Experienced Drifter Trip Captain with the group',
       'Trip photos, moments & inside jokes',
       'A small useful Drifter gift'
     ],
     exclusions: [
       'Personal expenses & shopping',
-      'Lunch & personal snacks',
-      'Anything outside planned itinerary'
+      'Lunches & personal trail snacks',
+      'Anything outside the planned experience'
     ],
     startingPoint: 'Patna Basecamp',
     endingPoint: 'Patna Basecamp',
-    stayType: 'Alpine Tents & Pine Campsite',
-    transportType: 'Group Bus / Tempo Traveller',
+    stayType: 'Cozy Wooden Alpine Chalet',
+    transportType: 'Group Bus & Private Mountain Transfers',
     mealsInfo: 'Breakfast + Dinner',
-    groupSize: '20 Drifters Max',
-    difficulty: 'Easy / Beginner',
-    participantCount: 14,
-    drifterAvatars: ['/images/bihar.jpg', '/images/hero.jpg'],
+    groupSize: '16 Drifters Max',
+    difficulty: 'Easy / Moderate',
+    participantCount: 12,
+    drifterAvatars: ['/images/bihar.jpg', '/images/hero.jpg', '/images/trek1.jpg'],
     itinerary: [],
     faqs: [
       {
-        question: 'Is this trip suitable for solo travellers?',
-        answer: 'Yes! Over 80% join solo. We pair up tentmates and keep the vibe welcoming.'
+        question: 'Why is the location secret?',
+        answer: 'To protect the serenity of the trail and keep commercial crowds away. Exact coordinates are shared with registered Drifters 48 hours before departure!'
       },
       {
-        question: 'What is included in the price?',
-        answer: 'Patna transport, waterproof tents & sleeping gear, breakfast & dinner, and Captain guidance.'
+        question: 'Is this trip suitable for solo travellers?',
+        answer: 'Yes! Over 80% of Drifters join solo. You will be paired with awesome roomies of the same gender and leave with a close crew.'
       }
     ]
   },
-
-  {
-    slug: 'rohtasgarh-fortress-camping',
-    badge: 'COMING SOON',
-    title: 'ROHTASGARH FORT × CAMPING',
-    category: 'Bihar',
-    location: 'Kaimur Plateau & Rohtasgarh Fort, Bihar',
-    status: 'UPCOMING',
-    isFeaturedUpcoming: true,
-    hook: 'An old fort. A bunch of strangers. One night under the stars.',
-    secondaryCopy: 'Hike up ancient limestone cliffs to Rohtasgarh Fort, pitch your tent inside historic ruins, and watch the valley sunset over the Son river.',
-    curiosityLine: 'You probably haven\'t camped here before.',
-    ctaText: 'I\'M CURIOUS →',
-    date: 'Nov 07 - Nov 09',
-    duration: '3 Days',
-    startingPrice: '₹3,999',
-    spots: 'Community trip',
-    imageUrl: 'https://images.unsplash.com/photo-1682517885754-04bb5fbaf2bb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'An old fort, a bunch of strangers, and one night under the stars. Hike up ancient limestone cliffs to Rohtasgarh Fort, camp inside historic ruins, and watch the valley sunset over the Son river.',
-
-    highlights: [
-      'Cliffside tent camping inside historic fort ruins',
-      'Spectacular sunset over Son river valley',
-      'Limestone trail trek up Kaimur plateau',
-      'Campfire storytelling & acoustic music'
-    ],
-    inclusions: [
-      'Round-trip transportation from Patna to Patna',
-      'Triple-sharing camping tents',
-      'Daily breakfast',
-      'Daily dinner',
-      'Experienced Drifter Trip Captain',
-      'Surprise Drifter gift'
-    ],
-    exclusions: ['Personal expenses', 'Lunch & snacks'],
-    startingPoint: 'Patna',
-    endingPoint: 'Patna',
-    stayType: 'Cliffside Tents',
-    transportType: 'Group Bus',
-    mealsInfo: 'Breakfast + Dinner',
-    groupSize: '15 Drifters',
-    difficulty: 'Moderate Hill Trek',
-    itinerary: [],
-    faqs: []
-  },
   {
     slug: 'kasol-party-trekking',
-    badge: 'COMING SOON',
+    badge: 'LIVE NOW',
     title: 'KASOL PARTY × TREKKING',
     category: 'Himachal',
     location: 'Kasol & Tosh Village, Parvati Valley',
-    status: 'UPCOMING',
+    status: 'LIVE DROP',
     hook: 'Go for the party. Stay for the mountains.',
     secondaryCopy: 'Explore famous riverside cafes, trek up to snow-clad Tosh & Kutla, chill by the rushing Parvati river, and experience the electric energy of the valley.',
     curiosityLine: 'Somewhere between the bass and the trail, things get interesting.',
-    ctaText: 'SHOW ME →',
-    date: 'Nov 18 - Nov 23',
+    ctaText: 'EXPLORE PARVATI →',
+    date: 'Upcoming Adventure in November & December',
     duration: '6 Days',
-    startingPrice: '₹8,999',
-    spots: 'Next departure',
+    startingPrice: '',
+    spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1662944113366-123561a844e1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     fullVision: 'Somewhere between the bass and the trail, things get interesting. Combine Parvati river cafe vibes with high alpine village trekking to Tosh and Kutla.',
-
     highlights: [
       'Cafe hopping & riverside chill sessions in Kasol',
       'Alpine hike to snow-capped Tosh & Kutla villages',
       'Bonfire party nights with mountain DJs & tribe jams'
     ],
-    inclusions: ['Round-trip transport', 'Triple-sharing stay', 'Breakfast & Dinner', 'Trip Captain'],
+    availableBatches: [
+      'November 2026 Batches Open',
+      'December 2026 Batches Open'
+    ],
+    inclusions: ['Round-trip transport from Patna', 'Triple-sharing stay', 'Breakfast & Dinner', 'Trip Captain'],
     exclusions: ['Personal expenses', 'Lunch'],
     startingPoint: 'Patna',
     endingPoint: 'Patna',
@@ -360,24 +305,27 @@ export const ALL_TRIPS: DetailedTrip[] = [
   },
   {
     slug: 'sojha-offbeat-cafe',
-    badge: 'COMING SOON',
+    badge: 'LIVE NOW',
     title: 'SOJHA OFFBEAT × CAFÉ',
     category: 'Himachal',
     location: 'Sojha & Jalori Pass, Seraj Valley',
-    status: 'UPCOMING',
+    status: 'LIVE DROP',
     hook: 'Not another Himachal checklist.',
     secondaryCopy: 'Cozy wooden chalets, artisanal mountain espresso, secret fir forest trails to Raghupur Fort ruins, and 360-degree Himalayan views.',
     curiosityLine: 'A slower mountain, a tiny café and a place most people scroll past.',
-    ctaText: 'WHAT IS SOJHA? →',
-    date: 'Dec 04 - Dec 08',
+    ctaText: 'EXPLORE SOJHA →',
+    date: 'Upcoming Adventure in November & December',
     duration: '5 Days',
-    startingPrice: '₹9,499',
-    spots: 'Reg closing soon',
+    startingPrice: '',
+    spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1757234891950-543e358697ee?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     fullVision: 'A slower mountain, a tiny café and a place most people scroll past. Stay in cozy wooden chalets, sip freshly brewed espresso, and hike secret forest ridges.',
-
     highlights: ['Offbeat wooden chalet stay', 'Raghupur Fort 360-degree trek', 'Serolsar Lake forest walk'],
-    inclusions: ['Round-trip transport', 'Chalet stay', 'Breakfast & Dinner', 'Trip Captain'],
+    availableBatches: [
+      'November 2026 Batches Open',
+      'December 2026 Batches Open'
+    ],
+    inclusions: ['Round-trip transport from Patna', 'Chalet stay', 'Breakfast & Dinner', 'Trip Captain'],
     exclusions: ['Personal expenses', 'Lunch'],
     startingPoint: 'Patna',
     endingPoint: 'Patna',
@@ -390,30 +338,38 @@ export const ALL_TRIPS: DetailedTrip[] = [
     faqs: []
   },
   {
-    slug: 'sandakphu-trek',
-    badge: 'COMING SOON',
-    title: 'SANDAKPHU TREK',
+    slug: 'manebhanjan-sandakphu-trek',
+    badge: 'LIVE NOW',
+    title: 'MANEBHANJAN WITH SANDAKPHU',
     category: 'North Bengal',
-    location: 'Singalila Ridge, Sandakphu',
-    status: 'UPCOMING',
-    hook: 'Four days. One ridiculous view.',
-    secondaryCopy: 'Singalila Ridge offers front-row views of the Sleeping Buddha massif featuring Mount Everest, Kanchenjunga, Lhotse, and Makalu.',
-    curiosityLine: 'Wake up above the clouds. Then question every decision that got you there.',
-    ctaText: 'TAKE ME THERE →',
-    date: 'Dec 22 - Dec 27',
-    duration: '6 Days',
-    startingPrice: '₹11,999',
-    spots: 'Only 5 spots left',
+    location: 'Manebhanjan & Singalila Ridge, Sandakphu',
+    status: 'LIVE DROP',
+    hook: 'Land of Red Pandas, vintage 1950s Land Rovers & the Sleeping Buddha.',
+    secondaryCopy: 'Backpack through Manebhanjan, Tumling, and Kalipokhri along the Singalila Ridge with iconic views of Everest and Kanchenjunga.',
+    curiosityLine: 'Vintage 1950s Land Rovers, high-altitude tea houses, and 4 of the world\'s 5 highest peaks.',
+    ctaText: 'EXPLORE MANEBHANJAN →',
+    date: 'Upcoming Adventure in November & December',
+    duration: '6 Days / 5 Nights',
+    startingPrice: '',
+    spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1584884789751-68dd2836ada1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'Four days. One ridiculous view. Walk above a sea of clouds along the Singalila ridge with unobstructed views of Mount Everest and Kanchenjunga.',
-
-    highlights: ['Views of 4 world highest peaks', 'Cloudwalk on Singalila Ridge', 'Indo-Nepal tea house stay'],
-    inclusions: ['Round-trip transport', 'Tea House stay', 'Breakfast & Dinner', 'Permits & Captain'],
+    fullVision: 'Backpack from Manebhanjan through Tumling and Kalipokhri along the Singalila Ridge. Experience vintage 1950s Land Rovers, high-altitude Indo-Nepal tea houses, and unobstructed views of the Sleeping Buddha massif featuring Mount Everest, Kanchenjunga, Lhotse, and Makalu.',
+    highlights: [
+      'Iconic Manebhanjan basecamp & vintage Land Rover drive',
+      'Panoramic views of 4 of the 5 highest peaks in the world',
+      'Cloudwalk along the high-altitude Singalila Ridge',
+      'Indo-Nepal tea house stays & cultural trail meals'
+    ],
+    availableBatches: [
+      'November 2026 Batches Open',
+      'December 2026 Batches Open'
+    ],
+    inclusions: ['Round-trip transport from Patna', 'Tea House stay', 'Breakfast & Dinner', 'Permits & Captain'],
     exclusions: ['Personal expenses', 'Lunch'],
     startingPoint: 'Patna',
     endingPoint: 'Patna',
     stayType: 'Tea House Lodges',
-    transportType: 'Group Bus',
+    transportType: 'Group Bus & Vintage Land Rover',
     mealsInfo: 'Breakfast + Dinner',
     groupSize: '14 Drifters',
     difficulty: 'Moderate Trek',

@@ -3,10 +3,10 @@ import DrifterTripsSection from '@/components/DrifterTripsSection';
 
 export const metadata: Metadata = {
   title: 'Curated Expeditions & Travel Drops | Drifter',
-  description: 'Explore live and upcoming expedition drops starting from Patna Basecamp. From Pokhara Nepal secret treks to Netarhat pine forest camping.',
+  description: 'Explore live and upcoming expedition drops starting from Patna Basecamp. From Pokhara Nepal secret treks to Secret Himalayan Spot getaways and Manebhanjan Sandakphu.',
   openGraph: {
     title: 'Curated Expeditions & Travel Drops | Drifter',
-    description: 'Explore live and upcoming expedition drops starting from Patna Basecamp. Pokhara, Netarhat, Kasol, Jibhi, and Meghalaya.',
+    description: 'Explore live and upcoming expedition drops starting from Patna Basecamp. Pokhara, Secret Himalaya Spot, Kasol, Jibhi, and Manebhanjan with Sandakphu.',
     url: 'https://www.drifter.buzz/expeditions',
   },
 };

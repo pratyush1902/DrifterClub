@@ -62,14 +62,10 @@ export default function TripDetailView({ trip }: TripDetailViewProps) {
 
           <div className={styles.metaStrip}>
             <span>📍 <strong>Destination:</strong> {trip.location}</span>
-            {trip.availableBatches ? (
-              <span>🗓 <strong>Open Batches:</strong> {trip.availableBatches.join(' • ')}</span>
-            ) : (
-              <span>📅 <strong>Date:</strong> {trip.date}</span>
-            )}
+            <span>📅 <strong>Upcoming Adventure:</strong> November & December</span>
             <span>⏱ <strong>Duration:</strong> {trip.duration}</span>
             <span>👥 <strong>Group:</strong> {trip.groupSize}</span>
-            <span>💰 <strong>Starting Price:</strong> {trip.startingPrice}</span>
+            {trip.startingPrice ? <span>💰 <strong>Starting Price:</strong> {trip.startingPrice}</span> : null}
             <span>📞 <strong>Helpline:</strong> <a href="tel:+917978578168" style={{ color: 'var(--color-amber)', textDecoration: 'none', fontWeight: 'bold' }}>+91 79785 78168</a></span>
           </div>
 

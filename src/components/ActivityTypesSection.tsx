@@ -10,7 +10,7 @@ export default function ActivityTypesSection() {
       colorClass: styles.cardColor1,
       gridClass: styles.span2,
       activities: [
-        'Kaimur Hills & Rohtasgarh Fort Plateau Camping',
+        'Secret Himalayan Spot Weekend Getaways',
         'Valmiki Tiger Reserve Forest & Riverbank Hikes',
         'Campfire Jam Sessions, Stargazing & Outdoor Cooking',
         'Rajgir Ridge Weekend Treks & Nature Trails'
@@ -25,7 +25,7 @@ export default function ActivityTypesSection() {
       gridClass: styles.tallCard,
       activities: [
         'Pokhara - Dhampus Annapurna Trail (Nepal)',
-        'Sandakphu Kanchenjunga Ridge Trek (North Bengal)',
+        'Manebhanjan with Sandakphu Ridge Trek (North Bengal)',
         'Sikkim High Altitude Glacial Lakes Expedition',
         'Hampta Pass & Spiti Ridge Crossover (Himachal)',
         'Goechala Pass High Mountain Summit Trails'
