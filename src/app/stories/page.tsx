@@ -1,19 +1,57 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { PATNA_BIHAR_KEYWORDS, SITE_URL, buildBreadcrumbJsonLd } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Travel Guides & Adventure Stories | Drifter',
-  description: 'Comprehensive, field-tested travel guides for travellers starting from Patna, Bihar. Nepal budget guides, Kasol, Jibhi, Meghalaya, and weekend getaways.',
-  openGraph: {
-    title: 'Travel Guides & Adventure Stories | Drifter',
-    description: 'Field-tested travel guides for travellers starting from Patna. Detailed routes, budgets, itineraries, and trail recaps.',
-    url: 'https://www.drifter.buzz/stories',
+  title: 'Patna Travel Guides, Bihar Adventure Blogs & Backpacking Stories',
+  description: 'Field-tested travel guides for travellers starting from Patna and Bihar: weekend trips, Nepal backpacking, Kasol, Jibhi, Meghalaya, trekking clubs, and adventure trips.',
+  alternates: {
+    canonical: '/stories',
   },
+  keywords: [
+    ...PATNA_BIHAR_KEYWORDS,
+    'Patna travel blog',
+    'Bihar adventure blog',
+    'travel guides from Patna',
+    'weekend getaway blogs Patna',
+  ],
+  openGraph: {
+    title: 'Patna Travel Guides, Bihar Adventure Blogs & Backpacking Stories',
+    description: 'Field-tested travel guides for travellers starting from Patna. Detailed routes, budgets, itineraries, trekking clubs, and trail recaps.',
+    url: `${SITE_URL}/stories`,
+  },
+};
+
+const storiesCollectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Drifter Patna and Bihar Travel Guides',
+  description: metadata.description,
+  url: `${SITE_URL}/stories`,
+  hasPart: [
+    { '@type': 'Article', name: '10 Best Weekend Trips from Patna', url: `${SITE_URL}/stories/10-best-weekend-trips-from-patna` },
+    { '@type': 'Article', name: 'Adventure Trips from Patna', url: `${SITE_URL}/stories/adventure-trips-from-patna` },
+    { '@type': 'Article', name: 'Trekking Club in Patna', url: `${SITE_URL}/stories/trekking-club-in-patna` },
+    { '@type': 'Article', name: 'Nepal Trip from Patna', url: `${SITE_URL}/stories/nepal-trip-from-patna` },
+    { '@type': 'Article', name: 'Patna to Kasol Backpacking Guide', url: `${SITE_URL}/stories/patna-to-kasol` },
+    { '@type': 'Article', name: 'Patna to Jibhi Offbeat Guide', url: `${SITE_URL}/stories/patna-to-jibhi` },
+    { '@type': 'Article', name: 'Patna to Meghalaya Backpacking Guide', url: `${SITE_URL}/stories/patna-to-meghalaya` },
+  ],
 };
 
 export default function Stories() {
   return (
     <div className="section" style={{ backgroundColor: 'var(--color-bg-primary)', padding: '4rem 0' }}>
+      <JsonLd
+        data={[
+          storiesCollectionJsonLd,
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Stories', path: '/stories' },
+          ]),
+        ]}
+      />
       <div className="container">
         <h1 className="text-forest animate-fade-up" style={{ fontFamily: 'var(--font-display)', fontSize: '2.8rem' }}>
           DRIFTER GUIDES & STORIES
@@ -61,8 +99,8 @@ export default function Stories() {
               <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.5', marginBottom: '1.2rem', fontSize: '0.88rem' }}>
                 From Netarhat pine camping and Rohtasgarh fort ruins to Pokhara nightlife & Darjeeling tea hills.
               </p>
-              <Link 
-                href="/stories/10-best-weekend-trips-from-patna" 
+              <Link
+                href="/stories/10-best-weekend-trips-from-patna"
                 className="btn btn-primary"
                 style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem' }}
               >
@@ -107,8 +145,8 @@ export default function Stories() {
               <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.5', marginBottom: '1.2rem', fontSize: '0.88rem' }}>
                 Routes, Raxaul border crossing, Kathmandu vs Pokhara, Voter ID rules & budget breakdown.
               </p>
-              <Link 
-                href="/stories/nepal-trip-from-patna" 
+              <Link
+                href="/stories/nepal-trip-from-patna"
                 className="btn btn-primary"
                 style={{ marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem' }}
               >
@@ -153,8 +191,8 @@ export default function Stories() {
               <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.5', marginBottom: '1.2rem', fontSize: '0.88rem' }}>
                 Routes via Delhi/Chandigarh, Bhuntar bus transfers, Tosh & Kheerganga treks & packing.
               </p>
-              <Link 
-                href="/stories/patna-to-kasol" 
+              <Link
+                href="/stories/patna-to-kasol"
                 className="btn btn-primary"
                 style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem' }}
               >
@@ -199,8 +237,8 @@ export default function Stories() {
               <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.5', marginBottom: '1.2rem', fontSize: '0.88rem' }}>
                 Aut tunnel transfers, Jalori Pass, Serolsar Lake, Shoja stays & quiet pine chalets.
               </p>
-              <Link 
-                href="/stories/patna-to-jibhi" 
+              <Link
+                href="/stories/patna-to-jibhi"
                 className="btn btn-primary"
                 style={{ marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem' }}
               >
@@ -245,8 +283,8 @@ export default function Stories() {
               <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.5', marginBottom: '1.2rem', fontSize: '0.88rem' }}>
                 Guwahati transit, Sohra waterfalls, Nongriat root bridges & Dawki river camping.
               </p>
-              <Link 
-                href="/stories/patna-to-meghalaya" 
+              <Link
+                href="/stories/patna-to-meghalaya"
                 className="btn btn-primary"
                 style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem' }}
               >
@@ -256,6 +294,24 @@ export default function Stories() {
           </div>
 
         </div>
+
+        <section style={{ marginBottom: '3.5rem', background: 'var(--color-forest)', color: 'var(--color-text-inverse)', padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
+          <h2 style={{ color: 'var(--color-amber)', fontFamily: 'var(--font-display)', fontSize: '1.8rem', marginBottom: '1rem' }}>
+            HIGH-INTENT PATNA GUIDES
+          </h2>
+          <div className="grid md:grid-cols-2 gap-md">
+            <div style={{ background: 'rgba(255,255,255,0.08)', padding: '1.5rem', borderRadius: 'var(--radius-md)' }}>
+              <h3 style={{ color: '#fff' }}>Adventure Trips from Patna</h3>
+              <p style={{ opacity: 0.88 }}>Best group trips for Bihar travellers: Netarhat, Rajgir, Rohtasgarh, Nepal, Kasol, Jibhi, Sandakphu, and Meghalaya.</p>
+              <Link href="/stories/adventure-trips-from-patna" className="btn btn-primary">READ ADVENTURE GUIDE →</Link>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.08)', padding: '1.5rem', borderRadius: 'var(--radius-md)' }}>
+              <h3 style={{ color: '#fff' }}>Trekking Club in Patna</h3>
+              <p style={{ opacity: 0.88 }}>How beginners and solo travellers from Bihar can join a safer outdoor community and prepare for their first trek.</p>
+              <Link href="/stories/trekking-club-in-patna" className="btn btn-primary">READ COMMUNITY GUIDE →</Link>
+            </div>
+          </div>
+        </section>
 
         <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--color-forest)', fontSize: '1.8rem', marginBottom: '1.5rem' }}>
           TRAIL DISPATCHES & RECAPS
@@ -271,8 +327,8 @@ export default function Stories() {
             { id: 6, title: 'Fortress Camping Under The Stars', img: 'https://images.unsplash.com/photo-1682517885754-04bb5fbaf2bb?q=80&w=1170&auto=format&fit=crop' },
           ].map((story) => (
             <div key={story.id} style={{ borderRadius: 'var(--radius-md)', overflow: 'hidden', background: 'var(--color-bg-secondary)', border: '1px solid rgba(11,26,20,0.08)' }}>
-              <div style={{ 
-                height: '200px', 
+              <div style={{
+                height: '200px',
                 backgroundImage: `url(${story.img})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'

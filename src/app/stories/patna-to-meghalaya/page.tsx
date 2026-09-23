@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/seo';
+
+const title = 'Patna to Meghalaya: Complete Backpacking Guide, Route, Cost & Itinerary for 2026 | Drifter';
+const description = 'Planning a Patna to Meghalaya trip? Complete 2026 guide covering Guwahati transit, Cherrapunji waterfalls, Nongriat root bridges, Dawki camping & budgets.';
 
 export const metadata = {
-  title: 'Patna to Meghalaya: Complete Backpacking Guide, Route, Cost & Itinerary for 2026 | Drifter',
-  description: 'Planning a Patna to Meghalaya trip? Complete 2026 guide covering Guwahati transit, Cherrapunji waterfalls, Nongriat root bridges, Dawki camping & budgets.',
+  title,
+  description,
+  alternates: {
+    canonical: '/stories/patna-to-meghalaya',
+  },
   openGraph: {
     title: 'Patna to Meghalaya: Complete Backpacking Guide for 2026',
     description: 'Complete 2026 Patna to Meghalaya guide: Guwahati flight/train, Shillong, Sohra waterfalls, Nongriat double decker root bridge, and Dawki.',
@@ -28,6 +36,16 @@ export const metadata = {
 export default function PatnaToMeghalayaPage() {
   return (
     <article className="section" style={{ backgroundColor: 'var(--color-bg-primary)', color: 'var(--color-text-main)', padding: '4rem 0' }}>
+      <JsonLd
+        data={[
+          buildArticleJsonLd({ title, description, path: '/stories/patna-to-meghalaya' }),
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Stories', path: '/stories' },
+            { name: 'Patna to Meghalaya', path: '/stories/patna-to-meghalaya' },
+          ]),
+        ]}
+      />
       <div className="container" style={{ maxWidth: '900px' }}>
 
         {/* HERO HEADER */}
@@ -289,10 +307,10 @@ export default function PatnaToMeghalayaPage() {
             <Link href="/expeditions" className="btn btn-primary" style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF' }}>
               EXPLORE MEGHALAYA WITH DRIFTER →
             </Link>
-            <a 
-              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Meghalaya%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Meghalaya%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline"
               style={{ color: '#FFF', borderColor: '#FFF' }}
             >

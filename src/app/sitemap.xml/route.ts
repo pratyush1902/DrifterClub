@@ -25,7 +25,9 @@ export async function GET() {
 
   const storySlugs = [
     '10-best-weekend-trips-from-patna',
+    'adventure-trips-from-patna',
     'nepal-trip-from-patna',
+    'trekking-club-in-patna',
     'patna-to-kasol',
     'patna-to-jibhi',
     'patna-to-meghalaya',
@@ -42,15 +44,15 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allUrls
-  .map(
-    (item) => `  <url>
+      .map(
+        (item) => `  <url>
     <loc>${item.loc}</loc>
     <lastmod>${lastMod}</lastmod>
     <changefreq>${item.changefreq}</changefreq>
     <priority>${item.priority}</priority>
   </url>`
-  )
-  .join('\n')}
+      )
+      .join('\n')}
 </urlset>`;
 
   return new Response(xml, {

@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/seo';
+
+const title = 'Nepal Trip from Patna: Complete Budget Travel Guide for 2026 | Drifter';
+const description = 'Planning a Nepal trip from Patna? Complete 2026 guide covering routes, Raxaul border crossing, Kathmandu vs Pokhara, budget breakdown, and packing tips.';
 
 export const metadata = {
-  title: 'Nepal Trip from Patna: Complete Budget Travel Guide for 2026 | Drifter',
-  description: 'Planning a Nepal trip from Patna? Complete 2026 guide covering routes, Raxaul border crossing, Kathmandu vs Pokhara, budget breakdown, and packing tips.',
+  title,
+  description,
+  alternates: {
+    canonical: '/stories/nepal-trip-from-patna',
+  },
   openGraph: {
     title: 'Patna to Nepal Trip: Complete Backpacking & Budget Guide 2026',
     description: 'Planning a Nepal trip from Patna? Complete guide covering Raxaul border crossing, Kathmandu vs Pokhara, Voter ID rules, Tata Sumo fares, and budgets.',
@@ -28,6 +36,16 @@ export const metadata = {
 export default function NepalTripFromPatnaPage() {
   return (
     <article className="section" style={{ backgroundColor: 'var(--color-bg-primary)', color: 'var(--color-text-main)', padding: '4rem 0' }}>
+      <JsonLd
+        data={[
+          buildArticleJsonLd({ title, description, path: '/stories/nepal-trip-from-patna' }),
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Stories', path: '/stories' },
+            { name: 'Nepal Trip from Patna', path: '/stories/nepal-trip-from-patna' },
+          ]),
+        ]}
+      />
       <div className="container" style={{ maxWidth: '900px' }}>
 
         {/* HERO HEADER */}
@@ -314,10 +332,10 @@ export default function NepalTripFromPatnaPage() {
             <Link href="/expeditions/pokhara-party-secret-trek" className="btn btn-primary" style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF' }}>
               JOIN OUR NEXT PATNA TO NEPAL DROP →
             </Link>
-            <a 
-              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Nepal%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Nepal%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline"
               style={{ color: '#FFF', borderColor: '#FFF' }}
             >

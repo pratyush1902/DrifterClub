@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/seo';
+
+const title = '10 Best Weekend Trips from Patna for 2026 | Drifter Community';
+const description = 'Looking to escape Patna this weekend? Discover the 10 best weekend trips from Patna for 2026—from Netarhat pine camping & Rajgir to Nepal & Darjeeling.';
 
 export const metadata = {
-  title: '10 Best Weekend Trips from Patna for 2026 | Drifter Community',
-  description: 'Looking to escape Patna this weekend? Discover the 10 best weekend trips from Patna for 2026—from Netarhat pine camping & Rajgir to Nepal & Darjeeling.',
+  title,
+  description,
+  alternates: {
+    canonical: '/stories/10-best-weekend-trips-from-patna',
+  },
   openGraph: {
     title: '10 Best Weekend Trips from Patna for 2026',
     description: 'Discover the 10 best weekend getaways from Patna—from Netarhat pine camping & Rajgir to Nepal & Darjeeling.',
@@ -28,6 +36,16 @@ export const metadata = {
 export default function WeekendTripsFromPatnaPage() {
   return (
     <article className="section" style={{ backgroundColor: 'var(--color-bg-primary)', color: 'var(--color-text-main)', padding: '4rem 0' }}>
+      <JsonLd
+        data={[
+          buildArticleJsonLd({ title, description, path: '/stories/10-best-weekend-trips-from-patna' }),
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Stories', path: '/stories' },
+            { name: '10 Best Weekend Trips from Patna', path: '/stories/10-best-weekend-trips-from-patna' },
+          ]),
+        ]}
+      />
       <div className="container" style={{ maxWidth: '900px' }}>
 
         {/* HERO HEADER */}
@@ -531,10 +549,10 @@ export default function WeekendTripsFromPatnaPage() {
             <Link href="/expeditions" className="btn btn-primary" style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF' }}>
               EXPLORE LIVE EXPEDITION DROPS →
             </Link>
-            <a 
-              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Patna%20weekend%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Patna%20weekend%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline"
               style={{ color: '#FFF', borderColor: '#FFF' }}
             >

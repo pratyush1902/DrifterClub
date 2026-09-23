@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/seo';
+
+const title = 'Patna to Jibhi: Complete Offbeat Himachal Backpacking Guide for 2026 | Drifter';
+const description = 'Planning a Patna to Jibhi trip? Complete 2026 offbeat guide covering Aut transit, Jalori Pass, Serolsar Lake, Shoja stays, budgets & packing.';
 
 export const metadata = {
-  title: 'Patna to Jibhi: Complete Offbeat Himachal Backpacking Guide for 2026 | Drifter',
-  description: 'Planning a Patna to Jibhi trip? Complete 2026 offbeat guide covering Aut transit, Jalori Pass, Serolsar Lake, Shoja stays, budgets & packing.',
+  title,
+  description,
+  alternates: {
+    canonical: '/stories/patna-to-jibhi',
+  },
   openGraph: {
     title: 'Patna to Jibhi: Complete Offbeat Himachal Backpacking Guide 2026',
     description: 'Looking for a quiet alternative to Manali? Patna to Jibhi complete guide: Aut tunnel transit, Jalori Pass, Serolsar Lake, Shoja stays, and costs.',
@@ -28,6 +36,16 @@ export const metadata = {
 export default function PatnaToJibhiPage() {
   return (
     <article className="section" style={{ backgroundColor: 'var(--color-bg-primary)', color: 'var(--color-text-main)', padding: '4rem 0' }}>
+      <JsonLd
+        data={[
+          buildArticleJsonLd({ title, description, path: '/stories/patna-to-jibhi' }),
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Stories', path: '/stories' },
+            { name: 'Patna to Jibhi', path: '/stories/patna-to-jibhi' },
+          ]),
+        ]}
+      />
       <div className="container" style={{ maxWidth: '900px' }}>
 
         {/* HERO HEADER */}
@@ -266,10 +284,10 @@ export default function PatnaToJibhiPage() {
             <Link href="/expeditions/sojha-offbeat-cafe" className="btn btn-primary" style={{ backgroundColor: 'var(--color-amber)', borderColor: 'var(--color-amber)', color: '#FFF' }}>
               EXPLORE MORE OFFBEAT ADVENTURES WITH DRIFTER →
             </Link>
-            <a 
-              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Jibhi%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/917978578168?text=Hey!%20I%20read%20the%20Jibhi%20guide%20and%20want%20to%20join%20the%20Drifter%20tribe!"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline"
               style={{ color: '#FFF', borderColor: '#FFF' }}
             >

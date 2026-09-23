@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTripBySlug } from '@/data/trips';
 import TripDetailView from '@/components/TripDetailView';
+import JsonLd from '@/components/JsonLd';
+import { PATNA_BIHAR_KEYWORDS, buildBreadcrumbJsonLd, buildFaqJsonLd, buildTripJsonLd } from '@/lib/seo';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -21,10 +23,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${trip.title} | Drifter Expeditions`,
-    description: `${trip.hook} Join Drifter's curated ${trip.duration} drop in ${trip.location}. Starting price: ${trip.startingPrice}.`,
+    description: `${trip.hook} Join Drifter's curated ${trip.duration} group trip from Patna Basecamp to ${trip.location}. Built for backpackers and adventure travellers from Bihar.`,
+    alternates: {
+      canonical: `/expeditions/${trip.slug}`,
+    },
+    keywords: [
+      ...PATNA_BIHAR_KEYWORDS,
+      `${trip.title} from Patna`,
+      `${trip.category} trip from Bihar`,
+      `${trip.location} group trip`,
+      `${trip.duration} adventure trip from Patna`,
+    ],
     openGraph: {
       title: `${trip.title} | Drifter Expeditions`,
-      description: `${trip.hook} ${trip.secondaryCopy}`,
+      description: `${trip.hook} ${trip.secondaryCopy} Starts from Patna Basecamp for Bihar travellers.`,
       url: `https://www.drifter.buzz/expeditions/${trip.slug}`,
       images: [
         {
@@ -36,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     twitter: {
       card: 'summary_large_image',
       title: `${trip.title} | Drifter Expeditions`,
-      description: `${trip.hook} Starting price: ${trip.startingPrice}.`,
+      description: `${trip.hook} Group adventure drop from Patna Basecamp for Bihar travellers.`,
       images: [trip.imageUrl],
     },
   };
@@ -65,6 +77,7 @@ export default function TripDetailPage({ params }: PageProps) {
   if (trip.status === 'UPCOMING') {
     return (
       <div className="section text-center" style={{ padding: '6rem 0', backgroundColor: 'var(--color-bg-primary)', minHeight: '75vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <JsonLd data={buildTripJsonLd(trip)} />
         <div className="container" style={{ maxWidth: '640px' }}>
           <span style={{
             display: 'inline-block',
@@ -102,5 +115,20 @@ export default function TripDetailPage({ params }: PageProps) {
     );
   }
 
-  return <TripDetailView trip={trip} />;
+  return (
+    <>
+      <JsonLd
+        data={[
+          buildTripJsonLd(trip),
+          buildFaqJsonLd(trip.faqs),
+          buildBreadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Expeditions', path: '/expeditions' },
+            { name: trip.title, path: `/expeditions/${trip.slug}` },
+          ]),
+        ]}
+      />
+      <TripDetailView trip={trip} />
+    </>
+  );
 }

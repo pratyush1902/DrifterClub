@@ -307,72 +307,185 @@ export const ALL_TRIPS: DetailedTrip[] = [
     badge: 'LIVE NOW',
     title: 'KASOL PARTY × TREKKING',
     category: 'Himachal',
-    location: 'Kasol & Tosh Village, Parvati Valley',
+    location: 'Kasol, Tosh Village & Kutla Meadow, Parvati Valley',
     status: 'LIVE DROP',
     hook: 'Go for the party. Stay for the mountains.',
     secondaryCopy: 'Explore famous riverside cafes, trek up to snow-clad Tosh & Kutla, chill by the rushing Parvati river, and experience the electric energy of the valley.',
     curiosityLine: 'Somewhere between the bass and the trail, things get interesting.',
     ctaText: 'EXPLORE PARVATI →',
     date: 'Upcoming Adventure in November & December',
-    duration: '6 Days',
+    duration: '5 Days / 4 Nights',
     startingPrice: '',
     spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1662944113366-123561a844e1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'Somewhere between the bass and the trail, things get interesting. Combine Parvati river cafe vibes with high alpine village trekking to Tosh and Kutla.',
+    fullVision: 'Somewhere between the bass and the trail, things get interesting. Combine Parvati river cafe vibes with high alpine village trekking to Tosh and Kutla hidden meadows.',
     highlights: [
-      'Cafe hopping & riverside chill sessions in Kasol',
-      'Alpine hike to snow-capped Tosh & Kutla villages',
-      'Bonfire party nights with mountain DJs & tribe jams'
+      'Cafe hopping & riverside chill sessions in Kasol (Evergreen & Jim Morrison)',
+      'Scenic hike to snow-capped Tosh village & Kutla secret meadow',
+      'Bonfire party nights with mountain jams & tribe campfire BBQ',
+      'Hot spring reset at Manikaran Sahib Gurudwara'
     ],
     availableBatches: [
       'November 2026 Batches Open',
       'December 2026 Batches Open'
     ],
-    inclusions: ['Round-trip transport from Patna', 'Triple-sharing stay', 'Breakfast & Dinner', 'Trip Captain'],
-    exclusions: ['Personal expenses', 'Lunch'],
-    startingPoint: 'Patna',
-    endingPoint: 'Patna',
-    stayType: 'Campsite & Homestay',
-    transportType: 'Group Bus',
-    mealsInfo: 'Breakfast + Dinner',
-    groupSize: '14 Drifters',
-    difficulty: 'Moderate',
+    experienceFlow: [
+      {
+        vibeTag: 'DAY 00 • OVERNIGHT BUS',
+        title: 'Patna to Kasol Departure',
+        tagline: 'Overnight Road Trip to Parvati Valley',
+        description: 'Gather at Patna Basecamp in the evening. Meet your Trip Captain and crew before boarding an overnight bus into the heart of Himachal Pradesh.',
+        icon: '🚌'
+      },
+      {
+        vibeTag: 'DAY 01 • RIVERSIDE LANDING & CAFES',
+        title: 'Kasol Arrival, Parvati River Walk & Cafe Hopping',
+        tagline: 'Riverside Campsite Check-in, Israeli Food & Bonfire Jams',
+        description: 'Arrive in Kasol by morning. Check into cozy riverside stays, head out for a walk along the gushing Parvati River, hop through iconic cafes, and gather for an acoustic bonfire night.',
+        icon: '☕'
+      },
+      {
+        vibeTag: 'DAY 02 • TOSH VILLAGE HIKE & PARTY NIGHT',
+        title: 'Manikaran Visit, Tosh Village Trek & Mountain Homestay',
+        tagline: 'Hot Springs, Snow-clad Wooden Village & Fireplace Vibes',
+        description: 'Visit the sacred Manikaran Sahib hot springs before driving to Barshaini. Hike up to the picturesque village of Tosh, check into a mountain homestay, explore waterfalls, and party under the stars.',
+        icon: '🏔️'
+      },
+      {
+        vibeTag: 'DAY 03 • KUTLA SECRET MEADOW TREK',
+        title: 'Kutla Hidden Meadow Hike & Glacier Streams',
+        tagline: 'High-Altitude Alpine Forest Walk & Unplugged Mountain Chill',
+        description: 'Set out on a scenic trek beyond Tosh to the secluded Kutla meadow surrounded by pine forests and snow peaks. Sip hot chai at hidden tea stalls, relax by glacier streams, and return to Tosh for fireside jams.',
+        icon: '🌲'
+      },
+      {
+        vibeTag: 'DAY 04 • SHOPPING & RETURN TO PATNA',
+        title: 'Kasol Flea Market & Overnight Journey Back',
+        tagline: 'Souvenir Hunting, Farewell Coffee & Boarding Return Transport',
+        description: 'Descend to Kasol town for last-minute flea market souvenir shopping, enjoy a relaxed lunch at local bakeries, and board our transport back to Patna Basecamp.',
+        icon: '🌄'
+      }
+    ],
     itinerary: [],
-    faqs: []
+    inclusions: [
+      'Round-trip transport from Patna Basecamp to Kasol & back',
+      'Triple-sharing stay in riverside camps & Tosh wooden homestays',
+      'Daily breakfast & dinner as specified',
+      'Guided treks to Tosh & Kutla hidden meadow',
+      'Experienced Drifter Trip Captain',
+      'Bonfire, acoustic sessions & tribe moments'
+    ],
+    exclusions: ['Personal expenses & lunches', 'Anything not mentioned in inclusions'],
+    startingPoint: 'Patna Basecamp',
+    endingPoint: 'Patna Basecamp',
+    stayType: 'Cozy Riverside Camps & Wooden Homestays',
+    transportType: 'Group Bus & Local Cab Transfers',
+    mealsInfo: 'Breakfast + Dinner',
+    groupSize: '14 Drifters Max',
+    difficulty: 'Moderate',
+    faqs: [
+      {
+        question: 'Is the trek to Tosh and Kutla difficult?',
+        answer: 'The trek to Tosh is a short 1-hour gentle uphill walk, and Kutla is an optional scenic 2-hour forest hike suitable for beginners!'
+      },
+      {
+        question: 'Can solo travellers join this trip?',
+        answer: 'Yes! Over 80% of our travellers join solo and leave as a close tribe.'
+      }
+    ]
   },
   {
     slug: 'sojha-offbeat-cafe',
     badge: 'LIVE NOW',
-    title: 'SOJHA OFFBEAT × CAFÉ',
+    title: 'SOJHA & JIBHI OFFBEAT × CAFÉ',
     category: 'Himachal',
-    location: 'Sojha & Jalori Pass, Seraj Valley',
+    location: 'Jibhi, Sojha & Jalori Pass, Seraj Valley',
     status: 'LIVE DROP',
     hook: 'Not another Himachal checklist.',
     secondaryCopy: 'Cozy wooden chalets, artisanal mountain espresso, secret fir forest trails to Raghupur Fort ruins, and 360-degree Himalayan views.',
     curiosityLine: 'A slower mountain, a tiny café and a place most people scroll past.',
-    ctaText: 'EXPLORE SOJHA →',
+    ctaText: 'EXPLORE JIBHI & SOJHA →',
     date: 'Upcoming Adventure in November & December',
-    duration: '5 Days',
+    duration: '5 Days / 4 Nights',
     startingPrice: '',
     spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1757234891950-543e358697ee?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    fullVision: 'A slower mountain, a tiny café and a place most people scroll past. Stay in cozy wooden chalets, sip freshly brewed espresso, and hike secret forest ridges.',
-    highlights: ['Offbeat wooden chalet stay', 'Raghupur Fort 360-degree trek', 'Serolsar Lake forest walk'],
+    fullVision: 'Escape crowded tourist loops and step into the tranquil wooden hamlets of Jibhi and Sojha in Tirthan Valley. Stay in handcrafted wooden chalets, sip freshly brewed mountain espresso, hike through dense fir forests to sacred Serolsar Lake, and catch 360-degree sunset views from Raghupur Fort ruins.',
+    highlights: [
+      'Handcrafted wooden chalet stay in Jibhi & Sojha',
+      'Artisanal mountain cafe hopping & stream-side relaxation',
+      'Guided forest trek to sacred Serolsar Lake via Jalori Pass (10,800 ft)',
+      '360-degree Himalayan ridge hike to Raghupur Fort ruins',
+      'Jibhi Waterfall & Choie Waterfall exploration'
+    ],
     availableBatches: [
       'November 2026 Batches Open',
       'December 2026 Batches Open'
     ],
-    inclusions: ['Round-trip transport from Patna', 'Chalet stay', 'Breakfast & Dinner', 'Trip Captain'],
-    exclusions: ['Personal expenses', 'Lunch'],
-    startingPoint: 'Patna',
-    endingPoint: 'Patna',
-    stayType: 'Cozy Chalet',
-    transportType: 'Group Bus',
-    mealsInfo: 'Breakfast + Dinner',
-    groupSize: '12 Drifters',
-    difficulty: 'Easy / Moderate',
+    experienceFlow: [
+      {
+        vibeTag: 'DAY 00 • OVERNIGHT BUS',
+        title: 'Patna to Tirthan Valley Departure',
+        tagline: 'Overnight Road Trip to Himachal Himalayas',
+        description: 'Meet at Patna Basecamp in the evening, board our comfortable transport, and begin the overnight journey into the tranquil Tirthan & Seraj Valleys.',
+        icon: '🚌'
+      },
+      {
+        vibeTag: 'DAY 01 • JIBHI WATERFALL & CHALET LANDING',
+        title: 'Jibhi Waterfall, Wooden Chalet Check-in & Cafe Chill',
+        tagline: 'Wooden Bridge Walk, Mountain Espresso & Cozy Fireside Dinner',
+        description: 'Arrive in Jibhi by morning. Check into wooden chalets surrounded by pine trees, explore the famous Jibhi Waterfall and wooden bridges, sip artisanal espresso at local cafes, and unwind around the evening fire.',
+        icon: '🏡'
+      },
+      {
+        vibeTag: 'DAY 02 • JALORI PASS & SEROLSAR LAKE',
+        title: 'Jalori Pass Drive & Serolsar Lake Forest Walk',
+        tagline: '10,800 ft Ridge Drive, Ancient Oak Trails & Sacred Mountain Lake',
+        description: 'Drive up to high-altitude Jalori Pass (10,800 ft). Set out on a gentle 5 km forest walk through oak and fir trees to sacred Serolsar Lake & Budhi Nagin Temple. Enjoy peak views before returning to Sojha.',
+        icon: '🌲'
+      },
+      {
+        vibeTag: 'DAY 03 • RAGHUPUR FORT 360° RIDGE HIKE',
+        title: 'Raghupur Fort Ruins Trek & Sunset Stargazing',
+        tagline: '360-Degree Dhauladhar Peak Panorama, Grassland Meadow & Bonfire BBQ',
+        description: 'Embark on a panoramic ridge hike to the ancient Raghupur Fort ruins. Experience 360-degree views of snow-capped Dhauladhar and Pir Panjal ranges. Enjoy an alpine meadow picnic and evening campfire stargazing.',
+        icon: '⛰️'
+      },
+      {
+        vibeTag: 'DAY 04 • CHOIE WATERFALL & RETURN JOURNEY',
+        title: 'Choie Waterfall Hike & Return to Patna',
+        tagline: 'Morning Stream Trail, Local Cafe Lunch & Return Transport',
+        description: 'Enjoy a slow morning breakfast followed by a short hike to Choie Waterfall in Tirthan Valley. Grab local trout/cafe lunch and board our return transport back to Patna Basecamp.',
+        icon: '🌄'
+      }
+    ],
     itinerary: [],
-    faqs: []
+    inclusions: [
+      'Round-trip transport from Patna Basecamp to Jibhi/Sojha & back',
+      'Triple-sharing stay in handcrafted wooden chalets & homestays',
+      'Daily breakfast & dinner as specified',
+      'Guided forest walks to Serolsar Lake & Raghupur Fort ruins',
+      'Experienced Drifter Trip Captain',
+      'Bonfire, acoustic stargazing & tribe BBQ night'
+    ],
+    exclusions: ['Personal expenses & lunches', 'Anything not mentioned in inclusions'],
+    startingPoint: 'Patna Basecamp',
+    endingPoint: 'Patna Basecamp',
+    stayType: 'Handcrafted Wooden Alpine Chalets',
+    transportType: 'Group Bus & Local Mountain Transfers',
+    mealsInfo: 'Breakfast + Dinner',
+    groupSize: '12 Drifters Max',
+    difficulty: 'Easy / Moderate',
+    faqs: [
+      {
+        question: 'What makes Jibhi & Sojha special compared to main Kasol or Manali?',
+        answer: 'Jibhi and Sojha are untouched, offbeat wooden hamlets with far fewer crowds, pristine pine forests, handcrafted chalets, and artisanal coffee culture.'
+      },
+      {
+        question: 'Are the treks to Serolsar Lake and Raghupur Fort suitable for beginners?',
+        answer: 'Yes! Both treks are gentle, scenic trails through beautiful forests and meadows suitable for anyone with basic fitness.'
+      }
+    ]
   },
   {
     slug: 'manebhanjan-sandakphu-trek',
@@ -386,7 +499,7 @@ export const ALL_TRIPS: DetailedTrip[] = [
     curiosityLine: 'Vintage 1950s Land Rovers, high-altitude tea houses, and 4 of the world\'s 5 highest peaks.',
     ctaText: 'EXPLORE MANEBHANJAN →',
     date: 'Upcoming Adventure in November & December',
-    duration: '6 Days / 5 Nights',
+    duration: '3 Days / 2 Nights',
     startingPrice: '',
     spots: 'Batches Open for Nov & Dec',
     imageUrl: 'https://images.unsplash.com/photo-1584884789751-68dd2836ada1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

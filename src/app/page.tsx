@@ -1,29 +1,76 @@
 import type { Metadata } from 'next';
 import ActivityTypesSection from '@/components/ActivityTypesSection';
 import DrifterTripsSection from '@/components/DrifterTripsSection';
-import CategoryTripExplorer from '@/components/CategoryTripExplorer';
 import InstagramSection from '@/components/InstagramSection';
+import JsonLd from '@/components/JsonLd';
+import { PATNA_BIHAR_KEYWORDS, SITE_URL, buildFaqJsonLd } from '@/lib/seo';
 import styles from './Home.module.css';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Drifter | Bihar\'s Premier Adventure & Travel Community',
-  description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. We organize curated weekend trips, Nepal expeditions, pine forest camping, and backpacking drops.',
-  openGraph: {
-    title: 'Drifter | Bihar\'s Premier Adventure & Travel Community',
-    description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. Curated weekend trips, Nepal expeditions, and pine forest camping.',
-    url: 'https://www.drifter.buzz',
+  title: 'Adventure Trips from Patna & Bihar | Drifter Backpacking Community',
+  description: 'Find adventure trips from Patna and Bihar: weekend getaways, Nepal backpacking, Himalayan treks, pine forest camping, and curated group trips with Drifter.',
+  alternates: {
+    canonical: '/',
   },
+  keywords: [
+    ...PATNA_BIHAR_KEYWORDS,
+    'best travel community in Patna',
+    'Patna to Nepal group trip',
+    'Bihar weekend adventure club',
+  ],
+  openGraph: {
+    title: 'Adventure Trips from Patna & Bihar | Drifter Backpacking Community',
+    description: 'Join Bihar\'s largest outdoor adventure tribe based in Patna. Curated weekend trips, Nepal expeditions, Himalayan treks, and pine forest camping.',
+    url: SITE_URL,
+  },
+};
+
+const homeFaqs = [
+  {
+    question: 'Which is the best adventure travel community in Patna?',
+    answer:
+      'Drifter is a Patna-based outdoor adventure community organizing curated weekend trips, backpacking drops, Nepal expeditions, Himalayan treks, and local Bihar meetups from Patna Basecamp.',
+  },
+  {
+    question: 'Does Drifter organize weekend trips from Patna and Bihar?',
+    answer:
+      'Yes. Drifter runs weekend trips from Patna for Bihar travellers, including pine forest camping, local wild escapes, Nepal backpacking, Himachal trips, and North Bengal Himalayan routes.',
+  },
+  {
+    question: 'Can solo travellers from Bihar join Drifter trips?',
+    answer:
+      'Yes. Most Drifter members join solo. Trips are curated for community, safety, shared transport from Patna, trip captains, verified stays, and beginner-friendly onboarding.',
+  },
+  {
+    question: 'How do I join a Drifter trip from Patna?',
+    answer:
+      'You can join a live expedition through the Drifter website or message the Drifter WhatsApp helpline at +91 7978578168 for current Patna Basecamp batches and waitlists.',
+  },
+];
+
+const homeItemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Popular adventure trips from Patna and Bihar',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Nepal backpacking trip from Patna', url: `${SITE_URL}/stories/nepal-trip-from-patna` },
+    { '@type': 'ListItem', position: 2, name: 'Weekend trips from Patna', url: `${SITE_URL}/stories/10-best-weekend-trips-from-patna` },
+    { '@type': 'ListItem', position: 3, name: 'Patna to Kasol backpacking guide', url: `${SITE_URL}/stories/patna-to-kasol` },
+    { '@type': 'ListItem', position: 4, name: 'Patna to Jibhi offbeat Himachal guide', url: `${SITE_URL}/stories/patna-to-jibhi` },
+    { '@type': 'ListItem', position: 5, name: 'Patna to Meghalaya backpacking guide', url: `${SITE_URL}/stories/patna-to-meghalaya` },
+  ],
 };
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={[buildFaqJsonLd(homeFaqs), homeItemListJsonLd]} />
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent}`}>
-          <h1 className="animate-fade-up">Your Weekends Suck. <br/><span className="text-amber">We Fix That.</span></h1>
+          <h1 className="animate-fade-up">Your Weekends Suck. <br /><span className="text-amber">We Fix That.</span></h1>
           <p className={`${styles.heroSubtitle} animate-fade-up`} style={{ animationDelay: '0.2s' }}>
             We're not a travel agency. We're a private tribe of explorers. Stop watching other people live and join the next drop.
           </p>
@@ -45,7 +92,7 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-lg items-center">
             <div>
-              <h2 className="text-forest" style={{ marginBottom: '0.5rem' }}>We Don't Take <br/>Everyone.</h2>
+              <h2 className="text-forest" style={{ marginBottom: '0.5rem' }}>We Don't Take <br />Everyone.</h2>
               <p>
                 Drifter isn't for tourists. It's for the fit, the active, and the hungry. We are a highly curated outdoor community in Bihar prioritizing safety, connection, and true grit.
               </p>
@@ -55,7 +102,7 @@ export default function Home() {
               <p>
                 <strong>What we are NOT:</strong> A travel agency selling generic tours to crowds.
               </p>
-              <br/>
+              <br />
               <Link href="/community" className="btn btn-outline">Read Our Manifesto</Link>
             </div>
             <div className={styles.manifestoImage}></div>
@@ -69,7 +116,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-lg items-center">
             <div className={styles.biharImage}></div>
             <div>
-              <h2 className="text-amber" style={{ marginBottom: '1rem' }}>Born In Bihar.<br/>Built For The Wild.</h2>
+              <h2 className="text-amber" style={{ marginBottom: '1rem' }}>Born In Bihar.<br />Built For The Wild.</h2>
               <p style={{ fontSize: '1.1rem', opacity: 0.9 }}>
                 For too long, the narrative has been that to find adventure, to find a tribe of like-minded explorers, you have to leave Bihar. We're calling bullshit on that.
               </p>
