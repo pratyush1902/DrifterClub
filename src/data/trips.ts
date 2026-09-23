@@ -275,6 +275,22 @@ export const ALL_TRIPS: DetailedTrip[] = [
         stay: 'Return Journey'
       }
     ],
+    inclusions: [
+      'Round-trip transport from Patna Basecamp to Secret Spot',
+      'Triple-sharing stay in cozy wooden chalets & homestays',
+      'Daily breakfast & dinner as specified in itinerary',
+      'Experienced Drifter Trip Captain with the group',
+      'Campfire, acoustic night & barbecue session',
+      'Trip photos, moments & inside jokes'
+    ],
+    exclusions: ['Personal expenses', 'Lunch & trail snacks', 'Anything not mentioned in inclusions'],
+    startingPoint: 'Patna Basecamp',
+    endingPoint: 'Patna Basecamp',
+    stayType: 'Cozy Wooden Chalet & Mountain Homestay',
+    transportType: 'Group Bus & Private Mountain Transfers',
+    mealsInfo: 'Breakfast + Dinner',
+    groupSize: '16 Drifters Max',
+    difficulty: 'Easy / Moderate',
     faqs: [
       {
         question: 'Why is the location secret?',
